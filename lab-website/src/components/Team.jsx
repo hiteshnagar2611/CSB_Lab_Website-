@@ -107,13 +107,13 @@ const Team = () => {
             name: 'Hitesh Nagar',
             role: 'Project Associate',
             details: 'MIT',
-            img: '/images/team/placeholder.jpg'
+            img: '/images/team/hitesh.jpg'
         },
         {
             name: 'Prathamdeep Dhanoa',
             role: 'Project Associate',
             details: 'MIT',
-            img: '/images/team/placeholder.jpg'
+            img: ''
         }
     ];
 
@@ -122,13 +122,13 @@ const Team = () => {
             name: 'Nabajit',
             role: 'Intern',
             details: 'MIT',
-            img: '/images/team/placeholder.jpg'
+            img: ''
         },
         {
             name: 'Varrunavi',
             role: 'Intern',
             details: 'MIT',
-            img: '/images/team/placeholder.jpg'
+            img: '/images/team/varrunavi.jpg'
         }
     ];
 
@@ -181,8 +181,8 @@ const Team = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center mb-6">Interested in Joining the Lab?</h2>
                     <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto mb-6">
-                        The Martin lab is an interdisciplinary research group. We encourage students and postdocs with experimental or computational backgrounds to inquire about our lab. Contact{' '}
-                        <a href="mailto:acmartin@mit.edu" className="text-blue-600 hover:underline">Adam Martin</a>{' '}
+                        The CSB is an interdisciplinary research group. We encourage students and postdocs with experimental or computational backgrounds to inquire about our lab. Contact{' '}
+                        <a href="mailto:lipi.thukral@igib.in" className="text-blue-600 hover:underline">Lipi Thukral</a>{' '}
                         with your CV and research interests if you are interested.
                     </p>
                     <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto">
