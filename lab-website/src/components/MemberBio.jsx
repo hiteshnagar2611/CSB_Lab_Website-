@@ -263,6 +263,31 @@ He is passionate about understanding RNA biology through computational approache
             publications: 3,
             joined: '2023'
         },
+        'anamika-singh': {
+            name: 'Anamika Singh',
+            role: 'PhD Student',
+            image: '/images/team/anamika.jpg',
+            bio: `Anamika is a PhD student specializing in computational structural biology with a focus on protein-ligand interactions and drug design. Her research combines molecular modeling, molecular dynamics simulations, and machine learning approaches.
+
+Current research:
+• Protein-ligand binding studies
+• Molecular dynamics simulations
+• Virtual screening and drug design
+• Machine learning for molecular property prediction
+• Computational analysis of protein structures
+
+Her work aims to develop computational tools for understanding molecular interactions and accelerating drug discovery processes.`,
+            education: [
+                'M.S. in Computational Chemistry, IIT Delhi (2023)',
+                'B.S. in Chemistry, Delhi University (2021)'
+            ],
+            awards: [
+                'IIT Delhi Research Fellowship',
+                'CSIR Junior Research Fellowship'
+            ],
+            publications: 2,
+            joined: '2024'
+        },
         'hitesh-nagar': {
             name: 'Hitesh Nagar',
             role: 'Project Associate',

@@ -44,7 +44,7 @@ const Team = () => {
             img: '/images/team/deepanshi.JPG'
         },
         {
-            name: 'Dr. Shailya',
+            name: 'Dr. Shailya Verma',
             role: 'Postdoc',
             details: 'MIT',
             img: '/images/team/shailyadi.JPG'
@@ -93,6 +93,12 @@ const Team = () => {
             role: 'PhD Student',
             details: 'MIT',
             img: '/images/team/jesu.JPG'
+        },
+        {
+            name: 'Anamika Singh',
+            role: 'PhD Student',
+            details: 'MIT',
+            img: '/images/team/anamika.jpg'
         }
     ];
 
