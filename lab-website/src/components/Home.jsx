@@ -65,7 +65,7 @@ const Home = () => {
                 <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
                     <img
-                        src="/images/team/lipiT.jpg"
+                        src="/images/team/LipiT.jpg"
                         alt="Dr. Lipi Thukral"
                         className="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-white shadow-lg object-cover"
                     />
@@ -140,22 +140,22 @@ const Home = () => {
 
                         <div className="grid grid-cols-2 gap-4">
                             <img
-                                src="/images/team/lipiT.jpg"
+                                src="/CSB_Lab_Website-/images/team/LipiT.jpg"
                                 alt="Lab research"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />
                             <img
-                                src="/images/team/shruti.jpeg"
+                                src="/CSB_Lab_Website-/images/team/shruti.jpeg"
                                 alt="Team collaboration"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />
                             <img
-                                src="/images/team/tanushree.jpg"
+                                src="/CSB_Lab_Website-/images/team/tanushree.jpg"
                                 alt="Lab equipment"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />
                             <img
-                                src="/images/team/deepanshi.jpg"
+                                src="/CSB_Lab_Website-/images/team/deepanshi.jpg"
                                 alt="Research discussion"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />
