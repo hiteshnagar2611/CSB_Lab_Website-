@@ -150,7 +150,6 @@ const Team = () => {
                             />
                         </div>
                         <h4 className="text-lg font-semibold text-gray-900 mb-2">{member.name}</h4>
-                        <p className="text-gray-600 whitespace-pre-line text-sm">{member.details}</p>
                         <div className="mt-3 text-blue-600 text-sm font-medium flex items-center">
                             View Profile <ChevronRight className="w-4 h-4 ml-1" />
                         </div>

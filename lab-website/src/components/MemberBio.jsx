@@ -11,7 +11,7 @@ const MemberBio = () => {
             name: 'Dr. Lipi Thukral',
             role: 'Principal Investigator',
             image: '/images/team/LipiT.jpg',
-            bio: `Dr. Lipi Thukral is the Principal Investigator of the Computational Structural Biology Lab at MIT. She leads research focused on understanding protein structure-function relationships using computational approaches.
+            bio: `Dr. Lipi Thukral is the Principal Investigator of the Computational Structural Biology Lab. She leads research focused on understanding protein structure-function relationships using computational approaches.
 
 Her research interests include:
 • Protein structure prediction and modeling
@@ -22,13 +22,13 @@ Her research interests include:
 
 Dr. Thukral has published over 50 papers in top-tier journals and has received numerous awards for her contributions to the field.`,
             education: [
-                'Ph.D. in Computational Biology, MIT',
+                'Ph.D. in Computational Biology',
                 'M.S. in Bioinformatics, Stanford University',
                 'B.S. in Biotechnology, IIT Delhi'
             ],
             awards: [
                 'NSF CAREER Award (2023)',
-                'MIT Technology Review Innovator Under 35 (2022)',
+                'Technology Review Innovator Under 35 (2022)',
                 'American Chemical Society Young Investigator Award (2021)'
             ],
             publications: 52,
@@ -102,12 +102,12 @@ Research focus:
 She is particularly interested in applying cutting-edge AI techniques to solve complex biological problems.`,
             education: [
                 'Ph.D. in Computer Science, Carnegie Mellon University',
-                'M.S. in Computational Biology, MIT',
+                'M.S. in Computational Biology',
                 'B.S. in Computer Science, IIT Delhi'
             ],
             awards: [
                 'Google PhD Fellowship',
-                'MIT Presidential Fellowship'
+                'Presidential Fellowship'
             ],
             publications: 22,
             joined: '2020'
@@ -157,7 +157,7 @@ She is passionate about developing tools that make structural biology more acces
                 'Research Intern, NIH (2023)'
             ],
             awards: [
-                'MIT Presidential Fellowship',
+                'Presidential Fellowship',
                 'IIT Delhi Academic Excellence Award'
             ],
             publications: 3,
@@ -182,7 +182,7 @@ Her research aims to understand how proteins interact with DNA to regulate gene 
                 'Summer Research Intern, Broad Institute (2023)'
             ],
             awards: [
-                'MIT Graduate Fellowship',
+                'Graduate Fellowship',
                 'IIT Delhi Research Excellence Award'
             ],
             publications: 2,
@@ -207,7 +207,7 @@ She is interested in applying computational methods to accelerate drug discovery
                 'Research Intern, Novartis (2023)'
             ],
             awards: [
-                'MIT Bioengineering Fellowship',
+                'Bioengineering Fellowship',
                 'IIT Bombay Institute Medal'
             ],
             publications: 4,
@@ -278,11 +278,11 @@ Technical expertise:
 
 He works on creating accessible tools for the broader scientific community.`,
             education: [
-                'M.S. in Computer Science, MIT',
+                'M.S. in Computer Science',
                 'B.S. in Computer Science, IIT Delhi'
             ],
             awards: [
-                'MIT Research Assistantship'
+                'Research Assistantship'
             ],
             publications: 2,
             joined: '2024'
@@ -302,11 +302,11 @@ Skills and expertise:
 
 His work supports the lab's research by providing efficient computational solutions.`,
             education: [
-                'M.S. in Computational Biology, MIT',
+                'M.S. in Computational Biology',
                 'B.S. in Biotechnology, IIT Kharagpur'
             ],
             awards: [
-                'MIT Computational Biology Fellowship'
+                'Computational Biology Fellowship'
             ],
             publications: 1,
             joined: '2024'
@@ -325,10 +325,10 @@ Current projects:
 
 He is gaining valuable experience in applying AI to biological problems.`,
             education: [
-                'B.S. in Computer Science, MIT (Sophomore)'
+                'B.S. in Computer Science (Sophomore)'
             ],
             awards: [
-                'MIT UROP Fellowship'
+                'UROP Fellowship'
             ],
             publications: 0,
             joined: '2024'
@@ -347,10 +347,10 @@ Current work:
 
 She is passionate about making science more accessible through better visualization and education.`,
             education: [
-                'B.S. in Biology, MIT (Sophomore)'
+                'B.S. in Biology (Sophomore)'
             ],
             awards: [
-                'MIT Biology UROP Award'
+                'Biology UROP Award'
             ],
             publications: 0,
             joined: '2024'
