@@ -9,6 +9,7 @@ import Resources from './components/Resources';
 import News from './components/News';
 import Team from './components/Team';
 import Contact from './components/Contact';
+import MemberBio from './components/MemberBio';
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
                 <Route path="/resources" element={<Resources />} />
                 <Route path="/news" element={<News />} />
                 <Route path="/team" element={<Team />} />
+                <Route path="/team/:name" element={<MemberBio />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
