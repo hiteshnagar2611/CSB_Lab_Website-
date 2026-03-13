@@ -31,7 +31,7 @@ const Team = () => {
         {
             name: 'Dr. Lipi Thukral',
             role: 'Principal Investigator',
-            details: 'lipi@mit.edu',
+            details: 'MIT',
             img: '/images/team/LipiT.jpg'
         }
     ];
@@ -40,25 +40,25 @@ const Team = () => {
         {
             name: 'Dr. Deepanshi',
             role: 'Postdoc',
-            details: 'deepanshi@mit.edu',
+            details: 'MIT',
             img: '/images/team/deepanshi.JPG'
         },
         {
             name: 'Dr. Shailya',
             role: 'Postdoc',
-            details: 'shailyadi@mit.edu',
+            details: 'MIT',
             img: '/images/team/shailyadi.JPG'
         },
         {
             name: 'Dr. Shruti Mathur',
             role: 'Postdoc',
-            details: 'shruti@mit.edu',
+            details: 'MIT',
             img: '/images/team/shruti.jpeg'
         },
         {
             name: 'Dr. Tanushree Das',
             role: 'Postdoc',
-            details: 'tanushree@mit.edu',
+            details: 'MIT',
             img: '/images/team/tanushree.JPG'
         }
     ];
@@ -67,31 +67,31 @@ const Team = () => {
         {
             name: 'Akanksha Kaushik',
             role: 'PhD Student',
-            details: 'akankshak@mit.edu',
+            details: 'MIT',
             img: '/images/team/akankshak.jpg'
         },
         {
             name: 'Aayushi Singh',
             role: 'PhD Student',
-            details: 'aayushis@mit.edu',
+            details: 'MIT',
             img: '/images/team/aayushis.jpg'
         },
         {
             name: 'Akanksha Arun',
             role: 'PhD Student',
-            details: 'akankshadi@mit.edu',
+            details: 'MIT',
             img: '/images/team/akankshadi.JPG'
         },
         {
             name: 'Debendra Kumar Swain',
             role: 'PhD Student',
-            details: 'debe@mit.edu',
+            details: 'MIT',
             img: '/images/team/debe.jpg'
         },
         {
             name: 'Jesu Castin',
             role: 'PhD Student',
-            details: 'jesu@mit.edu',
+            details: 'MIT',
             img: '/images/team/jesu.JPG'
         }
     ];
@@ -100,13 +100,13 @@ const Team = () => {
         {
             name: 'Hitesh Nagar',
             role: 'Project Associate',
-            details: 'hitesh@mit.edu',
+            details: 'MIT',
             img: '/images/team/placeholder.jpg'
         },
         {
             name: 'Prathamdeep Dhanoa',
             role: 'Project Associate',
-            details: 'prathamdeep@mit.edu',
+            details: 'MIT',
             img: '/images/team/placeholder.jpg'
         }
     ];

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Mail, MapPin, Calendar, Award } from 'lucide-react';
+import { ArrowLeft, MapPin, Calendar, Award } from 'lucide-react';
 
 const MemberBio = () => {
     const { name } = useParams();
@@ -10,7 +10,6 @@ const MemberBio = () => {
         'dr-lipi-thukral': {
             name: 'Dr. Lipi Thukral',
             role: 'Principal Investigator',
-            email: 'lipi@mit.edu',
             image: '/images/team/LipiT.jpg',
             bio: `Dr. Lipi Thukral is the Principal Investigator of the Computational Structural Biology Lab at MIT. She leads research focused on understanding protein structure-function relationships using computational approaches.
 
@@ -38,7 +37,6 @@ Dr. Thukral has published over 50 papers in top-tier journals and has received n
         'dr-deepanshi': {
             name: 'Dr. Deepanshi',
             role: 'Postdoc',
-            email: 'deepanshi@mit.edu',
             image: '/images/team/deepanshi.JPG',
             bio: `Dr. Deepanshi is a postdoctoral researcher specializing in computational protein design and molecular modeling. Her work focuses on developing novel algorithms for protein structure prediction and understanding protein-ligand interactions.
 
@@ -65,7 +63,6 @@ She is passionate about applying computational methods to solve real-world biolo
         'dr-shailya': {
             name: 'Dr. Shailya',
             role: 'Postdoc',
-            email: 'shailyadi@mit.edu',
             image: '/images/team/shailyadi.JPG',
             bio: `Dr. Shailya specializes in molecular dynamics simulations and computational biophysics. Her research focuses on understanding the dynamics of protein folding and protein-protein interactions at the atomic level.
 
@@ -92,7 +89,6 @@ Her work combines theoretical and computational approaches to address fundamenta
         'dr-shruti-mathur': {
             name: 'Dr. Shruti Mathur',
             role: 'Postdoc',
-            email: 'shruti@mit.edu',
             image: '/images/team/shruti.jpeg',
             bio: `Dr. Shruti Mathur works on developing machine learning models for protein structure prediction and function annotation. Her research bridges artificial intelligence and structural biology.
 
@@ -119,7 +115,6 @@ She is particularly interested in applying cutting-edge AI techniques to solve c
         'dr-tanushree-das': {
             name: 'Dr. Tanushree Das',
             role: 'Postdoc',
-            email: 'tanushree@mit.edu',
             image: '/images/team/tanushree.JPG',
             bio: `Dr. Tanushree Das specializes in computational enzymology and mechanistic studies of enzyme catalysis. Her work combines quantum mechanical calculations with molecular dynamics simulations.
 
@@ -146,7 +141,6 @@ Her research aims to understand the fundamental principles of enzyme catalysis a
         'akanksha-kaushik': {
             name: 'Akanksha Kaushik',
             role: 'PhD Student',
-            email: 'akankshak@mit.edu',
             image: '/images/team/akankshak.jpg',
             bio: `Akanksha is a PhD student working on developing novel computational methods for protein structure determination using cryo-EM data. Her research focuses on integrating experimental and computational approaches.
 
@@ -172,7 +166,6 @@ She is passionate about developing tools that make structural biology more acces
         'aayushi-singh': {
             name: 'Aayushi Singh',
             role: 'PhD Student',
-            email: 'aayushis@mit.edu',
             image: '/images/team/aayushis.jpg',
             bio: `Aayushi is a PhD student specializing in computational approaches to study protein-DNA interactions and gene regulation. Her work combines molecular modeling with genomics data.
 
@@ -198,7 +191,6 @@ Her research aims to understand how proteins interact with DNA to regulate gene 
         'akanksha-arun': {
             name: 'Akanksha Arun',
             role: 'PhD Student',
-            email: 'akankshadi@mit.edu',
             image: '/images/team/akankshadi.JPG',
             bio: `Akanksha is a PhD student working on computational immunology and antibody design. Her research focuses on developing algorithms for therapeutic antibody development.
 
@@ -224,7 +216,6 @@ She is interested in applying computational methods to accelerate drug discovery
         'debendra-kumar-swain': {
             name: 'Debendra Kumar Swain',
             role: 'PhD Student',
-            email: 'debe@mit.edu',
             image: '/images/team/debe.jpg',
             bio: `Debendra is a PhD student specializing in computational structural biology and membrane protein modeling. His research focuses on understanding membrane protein structure and function.
 
@@ -250,7 +241,6 @@ His work aims to develop better models for membrane proteins, which are importan
         'jesu-castin': {
             name: 'Jesu Castin',
             role: 'PhD Student',
-            email: 'jesu@mit.edu',
             image: '/images/team/jesu.JPG',
             bio: `Jesu is a PhD student working on developing computational tools for RNA structure prediction and RNA-protein interactions. His research combines algorithms and machine learning.
 
@@ -276,7 +266,6 @@ He is passionate about understanding RNA biology through computational approache
         'hitesh-nagar': {
             name: 'Hitesh Nagar',
             role: 'Project Associate',
-            email: 'hitesh@mit.edu',
             image: '/images/team/placeholder.jpg',
             bio: `Hitesh is a project associate working on software development for structural biology tools. He specializes in developing user-friendly interfaces for computational biology applications.
 
@@ -301,7 +290,6 @@ He works on creating accessible tools for the broader scientific community.`,
         'prathamdeep-dhanoa': {
             name: 'Prathamdeep Dhanoa',
             role: 'Project Associate',
-            email: 'prathamdeep@mit.edu',
             image: '/images/team/placeholder.jpg',
             bio: `Prathamdeep is a project associate focusing on data analysis and computational pipelines for structural biology research. He develops automated workflows for large-scale data processing.
 
@@ -326,7 +314,6 @@ His work supports the lab's research by providing efficient computational soluti
         'nabajit': {
             name: 'Nabajit',
             role: 'Intern',
-            email: 'nabajit@mit.edu',
             image: '/images/team/placeholder.jpg',
             bio: `Nabajit is an undergraduate intern working on machine learning applications in structural biology. He is developing models for protein classification and prediction tasks.
 
@@ -349,7 +336,6 @@ He is gaining valuable experience in applying AI to biological problems.`,
         'varrunavi': {
             name: 'Varrunavi',
             role: 'Intern',
-            email: 'varrunavi@mit.edu',
             image: '/images/team/placeholder.jpg',
             bio: `Varrunavi is an undergraduate intern focusing on molecular visualization and educational tools for structural biology. She works on creating interactive 3D models and educational content.
 
@@ -419,10 +405,6 @@ She is passionate about making science more accessible through better visualizat
                                     <h1 className="text-4xl font-bold mb-2">{member.name}</h1>
                                     <p className="text-xl text-blue-100 mb-4">{member.role}</p>
                                     <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-2 sm:space-y-0 text-blue-100">
-                                        <div className="flex items-center">
-                                            <Mail className="w-4 h-4 mr-2" />
-                                            {member.email}
-                                        </div>
                                         <div className="flex items-center">
                                             <Calendar className="w-4 h-4 mr-2" />
                                             Joined {member.joined}
