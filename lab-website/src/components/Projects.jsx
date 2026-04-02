@@ -2,11 +2,13 @@ import React from 'react';
 import { Award, BookOpen } from 'lucide-react';
 
 const Projects = () => {
+    const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, '')}`;
+
     return (
         <div className="min-h-screen bg-gray-50 pt-20">
             <section
                 className="py-20 bg-cover bg-center relative"
-                style={{ backgroundImage: "url('/CSB_Lab_Website-/images/backgrounds/bg5.png')" }}
+                style={{ backgroundImage: `url('${url('/images/backgrounds/bg5.png')}')` }}
             >
                 {/* White overlay for readability */}
                 <div className="absolute inset-0 bg-white opacity-50"></div>

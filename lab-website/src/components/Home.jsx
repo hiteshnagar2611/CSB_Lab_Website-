@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     const [currentNewsIndex, setCurrentNewsIndex] = useState(0);
 
+    const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, '')}`;
+
     const newsItems = [
         {
             date: "December 10, 2024",
@@ -60,12 +62,12 @@ const Home = () => {
             <section className="relative h-screen flex items-center justify-center">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: "url('/images/backgrounds/home_page_background.jpg')" }}
+                    style={{ backgroundImage: `url('${url('/images/backgrounds/home_page_background.jpg')}')` }}
                 ></div>
                 <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
                     <img
-                        src="/images/team/LipiT.jpg"
+                        src={url('/images/team/LipiT.jpg')}
                         alt="Dr. Lipi Thukral"
                         className="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-white shadow-lg object-cover"
                     />
@@ -139,22 +141,22 @@ const Home = () => {
 
                         <div className="grid grid-cols-2 gap-4">
                             <img
-                                src="/CSB_Lab_Website-/images/team/LipiT.jpg"
+                                src={url('/images/team/LipiT.jpg')}
                                 alt="Lab research"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />
                             <img
-                                src="/CSB_Lab_Website-/images/team/shruti.jpeg"
+                                src={url('/images/team/shruti.jpeg')}
                                 alt="Team collaboration"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />
                             <img
-                                src="/CSB_Lab_Website-/images/team/tanushree.jpg"
+                                src={url('/images/team/tanushree.jpg')}
                                 alt="Lab equipment"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />
                             <img
-                                src="/CSB_Lab_Website-/images/team/deepanshi.jpg"
+                                src={url('/images/team/deepanshi.jpg')}
                                 alt="Research discussion"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />

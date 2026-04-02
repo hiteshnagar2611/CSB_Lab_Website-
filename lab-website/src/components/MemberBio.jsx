@@ -5,12 +5,14 @@ import { ArrowLeft, MapPin, Calendar, Award } from 'lucide-react';
 const MemberBio = () => {
     const { name } = useParams();
 
+    const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, '')}`;
+
     // Team member data with detailed bio information
     const teamMembers = {
         'dr-lipi-thukral': {
             name: 'Dr. Lipi Thukral',
             role: 'Principal Investigator',
-            image: '/images/team/LipiT.jpg',
+            image: url('/images/team/LipiT.jpg'),
             bio: `Dr. Lipi Thukral obtained her Ph.D. from the University of Heidelberg, Germany (2007–2011), where she worked with Prof. Jeremy C. Smith on molecular dynamics simulations of protein folding. She then joined the group of Prof. Syma Khalid at the University of Southampton, UK, as a postdoctoral researcher. In 2013, she was awarded the prestigious DST-INSPIRE Faculty Fellowship and joined CSIR–Institute of Genomics and Integrative Biology (IGIB), India, as a computational biologist. She established her independent research group in 2016 and currently leads a computational structural biology group as a Senior Principal Scientist.
 In 2019, Dr. Thukral received the CSIR Young Scientist Award in Biological Sciences in recognition of her contributions to the field of autophagy. She is also a recipient of the India Alliance Intermediate Fellowship supported by DBT and the Wellcome Trust. She is a member of several national expert committees in computational biology and serves on the editorial boards of eLife and the Biophysical Journal, in addition to reviewing for leading international journals.
 Dr. Thukral’s research focuses on understanding how biomolecular interactions at the structural level, particularly how protein–membrane interactions in autophagy drive autophagosome formation. Her work integrates large-scale molecular simulations with experimental collaborations to interpret complex biological data and guide hypothesis-driven experiments. Her lab has published extensively in the areas of protein–lipid dynamics, autophagy, and structural genomics of infectious diseases. 
@@ -32,7 +34,7 @@ Dr. Thukral’s research focuses on understanding how biomolecular interactions 
         'dr-deepanshi': {
             name: 'Dr. Deepanshi',
             role: 'Postdoc',
-            image: '/images/team/deepanshi.JPG',
+            image: url('/images/team/deepanshi.JPG'),
             bio: `Dr. Deepanshi is a postdoctoral researcher specializing in computational protein design and molecular modeling. Her work focuses on developing novel algorithms for protein structure prediction and understanding protein-ligand interactions.
 
 Research interests:
@@ -58,7 +60,7 @@ She is passionate about applying computational methods to solve real-world biolo
         'dr-shailya': {
             name: 'Dr. Shailya',
             role: 'Postdoc',
-            image: '/images/team/shailyadi.JPG',
+            image: url('/images/team/shailyadi.JPG'),
             bio: `Dr. Shailya specializes in molecular dynamics simulations and computational biophysics. Her research focuses on understanding the dynamics of protein folding and protein-protein interactions at the atomic level.
 
 Key research areas:
@@ -84,7 +86,7 @@ Her work combines theoretical and computational approaches to address fundamenta
         'dr-shruti-mathur': {
             name: 'Dr. Shruti Mathur',
             role: 'Postdoc',
-            image: '/images/team/shruti.jpeg',
+            image: url('/images/team/shruti.jpeg'),
             bio: `Dr. Shruti Mathur works on developing machine learning models for protein structure prediction and function annotation. Her research bridges artificial intelligence and structural biology.
 
 Research focus:
@@ -110,7 +112,7 @@ She is particularly interested in applying cutting-edge AI techniques to solve c
         'dr-tanushree-das': {
             name: 'Dr. Tanushree Das',
             role: 'Postdoc',
-            image: '/images/team/tanushree.JPG',
+            image: url('/images/team/tanushree.JPG'),
             bio: `Dr. Tanushree Das specializes in computational enzymology and mechanistic studies of enzyme catalysis. Her work combines quantum mechanical calculations with molecular dynamics simulations.
 
 Research interests:
@@ -136,7 +138,7 @@ Her research aims to understand the fundamental principles of enzyme catalysis a
         'akanksha-kaushik': {
             name: 'Akanksha Kaushik',
             role: 'PhD Student',
-            image: '/images/team/akankshak.jpg',
+            image: url('/images/team/akankshak.jpg'),
             bio: `Akanksha is a PhD student working on developing novel computational methods for protein structure determination using cryo-EM data. Her research focuses on integrating experimental and computational approaches.
 
 Current research:
@@ -161,7 +163,7 @@ She is passionate about developing tools that make structural biology more acces
         'aayushi-singh': {
             name: 'Aayushi Singh',
             role: 'PhD Student',
-            image: '/images/team/aayushis.jpg',
+            image: url('/images/team/aayushis.jpg'),
             bio: `Aayushi is a PhD student specializing in computational approaches to study protein-DNA interactions and gene regulation. Her work combines molecular modeling with genomics data.
 
 Research focus:
@@ -186,7 +188,7 @@ Her research aims to understand how proteins interact with DNA to regulate gene 
         'akanksha-arun': {
             name: 'Akanksha Arun',
             role: 'PhD Student',
-            image: '/images/team/akankshadi.JPG',
+            image: url('/images/team/akankshadi.JPG'),
             bio: `Akanksha is a PhD student working on computational immunology and antibody design. Her research focuses on developing algorithms for therapeutic antibody development.
 
 Current projects:
@@ -211,7 +213,7 @@ She is interested in applying computational methods to accelerate drug discovery
         'debendra-kumar-swain': {
             name: 'Debendra Kumar Swain',
             role: 'PhD Student',
-            image: '/images/team/debe.jpg',
+            image: url('/images/team/debe.jpg'),
             bio: `Debendra is a PhD student specializing in computational structural biology and membrane protein modeling. His research focuses on understanding membrane protein structure and function.
 
 Research interests:
@@ -236,7 +238,7 @@ His work aims to develop better models for membrane proteins, which are importan
         'jesu-castin': {
             name: 'Jesu Castin',
             role: 'PhD Student',
-            image: '/images/team/jesu.JPG',
+            image: url('/images/team/jesu.JPG'),
             bio: `Jesu is a PhD student working on developing computational tools for RNA structure prediction and RNA-protein interactions. His research combines algorithms and machine learning.
 
 Current research:
@@ -261,7 +263,7 @@ He is passionate about understanding RNA biology through computational approache
         'anamika-singh': {
             name: 'Anamika Singh',
             role: 'PhD Student',
-            image: '/images/team/anamika.jpg',
+            image: url('/images/team/anamika.jpg'),
             bio: `Anamika is a PhD student specializing in computational structural biology with a focus on protein-ligand interactions and drug design. Her research combines molecular modeling, molecular dynamics simulations, and machine learning approaches.
 
 Current research:
@@ -286,7 +288,7 @@ Her work aims to develop computational tools for understanding molecular interac
         'hitesh-nagar': {
             name: 'Hitesh Nagar',
             role: 'Project Associate',
-            image: '/images/team/placeholder.jpg',
+            image: url('/images/team/placeholder.jpg'),
             bio: `Hitesh is a project associate working on software development for structural biology tools. He specializes in developing user-friendly interfaces for computational biology applications.
 
 Technical expertise:
@@ -310,7 +312,7 @@ He works on creating accessible tools for the broader scientific community.`,
         'prathamdeep-dhanoa': {
             name: 'Prathamdeep Dhanoa',
             role: 'Project Associate',
-            image: '/images/team/placeholder.jpg',
+            image: url('/images/team/placeholder.jpg'),
             bio: `Prathamdeep is a project associate focusing on data analysis and computational pipelines for structural biology research. He develops automated workflows for large-scale data processing.
 
 Skills and expertise:
@@ -334,7 +336,7 @@ His work supports the lab's research by providing efficient computational soluti
         'nabajit': {
             name: 'Nabajit',
             role: 'Intern',
-            image: '/images/team/placeholder.jpg',
+            image: url('/images/team/placeholder.jpg'),
             bio: `Nabajit is an undergraduate intern working on machine learning applications in structural biology. He is developing models for protein classification and prediction tasks.
 
 Current projects:
@@ -356,7 +358,7 @@ He is gaining valuable experience in applying AI to biological problems.`,
         'varrunavi': {
             name: 'Varrunavi',
             role: 'Intern',
-            image: '/images/team/placeholder.jpg',
+            image: url('/images/team/placeholder.jpg'),
             bio: `Varrunavi is an undergraduate intern focusing on molecular visualization and educational tools for structural biology. She works on creating interactive 3D models and educational content.
 
 Current work:
@@ -417,7 +419,7 @@ She is passionate about making science more accessible through better visualizat
                                         alt={member.name}
                                         className="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover"
                                         onError={(e) => {
-                                            e.target.src = '/images/team/placeholder.jpg';
+                                            e.target.src = url('/images/team/placeholder.jpg');
                                         }}
                                     />
                                 </div>

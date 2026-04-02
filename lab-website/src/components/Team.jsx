@@ -5,18 +5,20 @@ import { ChevronRight } from 'lucide-react';
 const Team = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
+    const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, '')}`;
+
     // Image carousel data - using available team images
     const carouselImages = [
-        '/images/team/deepanshi.JPG',
-        '/images/team/shailyadi.JPG',
-        '/images/team/shruti.jpeg',
-        '/images/team/akankshak.jpg',
-        '/images/team/aayushis.jpg',
-        '/images/team/akankshadi.JPG',
-        '/images/team/debe.jpg',
-        '/images/team/jesu.JPG',
-        '/images/team/tanushree.JPG',
-        '/images/team/LipiT.jpg'
+        url('/images/team/deepanshi.JPG'),
+        url('/images/team/shailyadi.JPG'),
+        url('/images/team/shruti.jpeg'),
+        url('/images/team/akankshak.jpg'),
+        url('/images/team/aayushis.jpg'),
+        url('/images/team/akankshadi.JPG'),
+        url('/images/team/debe.jpg'),
+        url('/images/team/jesu.JPG'),
+        url('/images/team/tanushree.JPG'),
+        url('/images/team/LipiT.jpg')
     ];
 
     // Auto-slide carousel
@@ -32,7 +34,7 @@ const Team = () => {
             name: 'Dr. Lipi Thukral',
             role: 'Principal Investigator',
             details: 'MIT',
-            img: '/images/team/LipiT.jpg'
+            img: url('/images/team/LipiT.jpg')
         }
     ];
 
@@ -41,25 +43,25 @@ const Team = () => {
             name: 'Dr. Deepanshi',
             role: 'Postdoc',
             details: 'MIT',
-            img: '/images/team/deepanshi.JPG'
+            img: url('/images/team/deepanshi.JPG')
         },
         {
             name: 'Dr. Shailya Verma',
             role: 'Postdoc',
             details: 'MIT',
-            img: '/images/team/shailyadi.JPG'
+            img: url('/images/team/shailyadi.JPG')
         },
         {
             name: 'Dr. Shruti Mathur',
             role: 'Postdoc',
             details: 'MIT',
-            img: '/images/team/shruti.jpeg'
+            img: url('/images/team/shruti.jpeg')
         },
         {
             name: 'Dr. Tanushree Das',
             role: 'Postdoc',
             details: 'MIT',
-            img: '/images/team/tanushree.JPG'
+            img: url('/images/team/tanushree.JPG')
         }
     ];
 
@@ -68,37 +70,37 @@ const Team = () => {
             name: 'Akanksha Kaushik',
             role: 'PhD Student',
             details: 'MIT',
-            img: '/images/team/akankshak.jpg'
+            img: url('/images/team/akankshak.jpg')
         },
         {
             name: 'Aayushi Singh',
             role: 'PhD Student',
             details: 'MIT',
-            img: '/images/team/aayushis.jpg'
+            img: url('/images/team/aayushis.jpg')
         },
         {
             name: 'Akanksha Arun',
             role: 'PhD Student',
             details: 'MIT',
-            img: '/images/team/akankshadi.JPG'
+            img: url('/images/team/akankshadi.JPG')
         },
         {
             name: 'Debendra Kumar Swain',
             role: 'PhD Student',
             details: 'MIT',
-            img: '/images/team/debe.jpg'
+            img: url('/images/team/debe.jpg')
         },
         {
             name: 'Jesu Castin',
             role: 'PhD Student',
             details: 'MIT',
-            img: '/images/team/jesu.JPG'
+            img: url('/images/team/jesu.JPG')
         },
         {
             name: 'Anamika Singh',
             role: 'PhD Student',
             details: 'MIT',
-            img: '/images/team/anamika.jpg'
+            img: url('/images/team/anamika.jpg')
         }
     ];
 
@@ -107,7 +109,7 @@ const Team = () => {
             name: 'Hitesh Nagar',
             role: 'Project Associate',
             details: 'MIT',
-            img: '/images/team/hitesh.jpg'
+            img: url('/images/team/hitesh.jpg')
         },
         {
             name: 'Prathamdeep Dhanoa',
@@ -128,7 +130,7 @@ const Team = () => {
             name: 'Varrunavi',
             role: 'Intern',
             details: 'MIT',
-            img: '/images/team/varrunavi.jpg'
+            img: url('/images/team/varrunavi.jpg')
         }
     ];
 
@@ -147,11 +149,11 @@ const Team = () => {
                     <div className="flex flex-col items-center text-center">
                         <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-white">
                             <img
-                                src={member.img}
+                                src={member.img || url('/images/team/placeholder.jpg')}
                                 alt={member.name}
                                 className="w-full h-full object-cover"
                                 onError={(e) => {
-                                    e.target.src = '/images/team/placeholder.jpg';
+                                    e.target.src = url('/images/team/placeholder.jpg');
                                 }}
                             />
                         </div>
@@ -193,7 +195,7 @@ const Team = () => {
                                         alt={`Lab photo ${index + 1}`}
                                         className="w-full h-96 object-cover"
                                         onError={(e) => {
-                                            e.target.src = '/images/team/placeholder.jpg';
+                                            e.target.src = url('/images/team/placeholder.jpg');
                                         }}
                                     />
                                 </div>

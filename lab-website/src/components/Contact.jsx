@@ -2,11 +2,13 @@ import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
+    const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, '')}`;
+
     return (
         <div className="min-h-screen bg-gray-50 pt-20">
             <section
                 className="py-20 bg-cover bg-center relative"
-                style={{ backgroundImage: "url('/CSB_Lab_Website-/images/backgrounds/bg6.png')" }}
+                style={{ backgroundImage: `url('${url('/images/backgrounds/bg6.png')}')` }}
             >
                 {/* Light overlay */}
                 <div className="absolute inset-0 bg-gray-50 opacity-90"></div>
