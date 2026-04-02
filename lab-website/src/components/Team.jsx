@@ -176,21 +176,7 @@ const Team = () => {
                 </div>
             </section>
 
-            {/* Interested in Joining Section */}
-            <section className="py-12 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-6">Interested in Joining the Lab?</h2>
-                    <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto mb-6">
-                        The CSB is an interdisciplinary research group. We encourage students and postdocs with experimental or computational backgrounds to inquire about our lab. Contact{' '}
-                        <a href="mailto:lipi.thukral@igib.in" className="text-blue-600 hover:underline">Lipi Thukral</a>{' '}
-                        with your CV and research interests if you are interested.
-                    </p>
-                    <p className="text-lg text-gray-700 text-center max-w-4xl mx-auto">
-                        We welcome trainees of any race, nationality, biological sex, gender identity, sexual orientation, religion, parental status, physical ability, and age. For how we practice this in the lab, see{' '}
-                        <a href="/lab-policies" className="text-blue-600 hover:underline">lab policies</a>.
-                    </p>
-                </div>
-            </section>
+            
 
             {/* Image Carousel */}
             <section className="py-12 bg-white">

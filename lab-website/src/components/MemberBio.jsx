@@ -11,16 +11,11 @@ const MemberBio = () => {
             name: 'Dr. Lipi Thukral',
             role: 'Principal Investigator',
             image: '/images/team/LipiT.jpg',
-            bio: `Dr. Lipi Thukral is the Principal Investigator of the Computational Structural Biology Lab. She leads research focused on understanding protein structure-function relationships using computational approaches.
+            bio: `Dr. Lipi Thukral obtained her Ph.D. from the University of Heidelberg, Germany (2007–2011), where she worked with Prof. Jeremy C. Smith on molecular dynamics simulations of protein folding. She then joined the group of Prof. Syma Khalid at the University of Southampton, UK, as a postdoctoral researcher. In 2013, she was awarded the prestigious DST-INSPIRE Faculty Fellowship and joined CSIR–Institute of Genomics and Integrative Biology (IGIB), India, as a computational biologist. She established her independent research group in 2016 and currently leads a computational structural biology group as a Senior Principal Scientist.
+In 2019, Dr. Thukral received the CSIR Young Scientist Award in Biological Sciences in recognition of her contributions to the field of autophagy. She is also a recipient of the India Alliance Intermediate Fellowship supported by DBT and the Wellcome Trust. She is a member of several national expert committees in computational biology and serves on the editorial boards of eLife and the Biophysical Journal, in addition to reviewing for leading international journals.
+Dr. Thukral’s research focuses on understanding how biomolecular interactions at the structural level, particularly how protein–membrane interactions in autophagy drive autophagosome formation. Her work integrates large-scale molecular simulations with experimental collaborations to interpret complex biological data and guide hypothesis-driven experiments. Her lab has published extensively in the areas of protein–lipid dynamics, autophagy, and structural genomics of infectious diseases. 
 
-Her research interests include:
-• Protein structure prediction and modeling
-• Molecular dynamics simulations
-• Drug discovery and design
-• Computational biophysics
-• Machine learning applications in structural biology
-
-Dr. Thukral has published over 50 papers in top-tier journals and has received numerous awards for her contributions to the field.`,
+`,
             education: [
                 'Ph.D. in Computational Biology',
                 'M.S. in Bioinformatics, Stanford University',

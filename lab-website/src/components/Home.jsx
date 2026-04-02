@@ -60,7 +60,7 @@ const Home = () => {
             <section className="relative h-screen flex items-center justify-center">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: "url('/images/backgrounds/hero-bg.jpg')" }}
+                    style={{ backgroundImage: "url('/images/backgrounds/home_page_background.jpg')" }}
                 ></div>
                 <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
@@ -70,7 +70,7 @@ const Home = () => {
                         className="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-white shadow-lg object-cover"
                     />
                     <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                        Welcome to CSB Lab
+                        Welcome to LT Lab
                     </h1>
                     <p className="text-xl md:text-2xl mb-8">
                         Advancing computational structural biology research at CSIR-IGIB
@@ -98,8 +98,7 @@ const Home = () => {
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-gray-900 mb-4">About Our Lab</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            We are a computational structural biology lab focused on understanding molecular mechanisms
-                            of biological processes through advanced computational approaches.
+                            Our laboratory has a long-standing interest in autophagy and, more broadly, maintains a strong focus on dynamic protein–membrane interactions. This problem sits uniquely at the interface of structural biology, genomics, biophysics, and computational biology, and we aim not only to understand these processes mechanistically but also to predict how cells respond to changes in their biochemical and membrane environments.
                         </p>
                     </div>
 

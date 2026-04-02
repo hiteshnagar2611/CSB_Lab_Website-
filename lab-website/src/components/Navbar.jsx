@@ -38,7 +38,7 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <Link to="/" className="flex items-center space-x-2">
-                        <div className={`w-8 h-8 ${scrolled ? 'text-blue-600' : 'text-white'} font-bold text-2xl`}>🧬</div>
+                        <div className={`w-8 h-8 ${scrolled ? 'text-blue-600' : 'text-white'} font-bold text-2xl`}></div>
                         <span className={`text-xl font-bold ${scrolled ? 'text-gray-900' : 'text-white'}`}>
                             Thukral Lab
                         </span>
