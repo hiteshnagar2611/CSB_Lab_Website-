@@ -2,12 +2,43 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
+const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, '')}`;
+
+const MemberCard = ({ member }) => {
+    // Create URL-friendly name for routing
+    const getMemberUrl = (name) => {
+        return name.toLowerCase()
+            .replace('dr. ', 'dr-')
+            .replace(/\s+/g, '-')
+            .replace(/\./g, '');
+    };
+
+    return (
+        <Link to={`/team/${getMemberUrl(member.name)}`} className="block">
+            <div className="bg-white border-2 border-white rounded-3xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
+                <div className="flex flex-col items-center text-center">
+                    <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-white">
+                        <img
+                            src={member.img || url('/images/team/placeholder.jpg')}
+                            alt={member.name}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                                e.target.src = url('/images/team/placeholder.jpg');
+                            }}
+                        />
+                    </div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">{member.name}</h4>
+                    <div className="mt-3 text-blue-600 text-sm font-medium flex items-center">
+                        View Profile <ChevronRight className="w-4 h-4 ml-1" />
+                    </div>
+                </div>
+            </div>
+        </Link>
+    );
+};
+
 const Team = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-
-    const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, '')}`;
-
-    // Image carousel data - using available team images
     const carouselImages = [
         url('/images/team/deepanshi.JPG'),
         url('/images/team/shailyadi.JPG'),
@@ -133,39 +164,6 @@ const Team = () => {
             img: url('/images/team/varrunavi.jpg')
         }
     ];
-
-    const MemberCard = ({ member }) => {
-        // Create URL-friendly name for routing
-        const getMemberUrl = (name) => {
-            return name.toLowerCase()
-                .replace('dr. ', 'dr-')
-                .replace(/\s+/g, '-')
-                .replace(/\./g, '');
-        };
-
-        return (
-            <Link to={`/team/${getMemberUrl(member.name)}`} className="block">
-                <div className="bg-white border-2 border-white rounded-3xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <div className="flex flex-col items-center text-center">
-                        <div className="w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-white">
-                            <img
-                                src={member.img || url('/images/team/placeholder.jpg')}
-                                alt={member.name}
-                                className="w-full h-full object-cover"
-                                onError={(e) => {
-                                    e.target.src = url('/images/team/placeholder.jpg');
-                                }}
-                            />
-                        </div>
-                        <h4 className="text-lg font-semibold text-gray-900 mb-2">{member.name}</h4>
-                        <div className="mt-3 text-blue-600 text-sm font-medium flex items-center">
-                            View Profile <ChevronRight className="w-4 h-4 ml-1" />
-                        </div>
-                    </div>
-                </div>
-            </Link>
-        );
-    };
 
     return (
         <div className="min-h-screen">

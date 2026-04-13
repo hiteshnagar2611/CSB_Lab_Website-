@@ -10,17 +10,16 @@ const Navbar = () => {
     const isHomePage = location.pathname === '/';
 
     useEffect(() => {
-        if (!isHomePage) {
-            setScrolled(true); // Always show white background on non-home pages
-            return;
-        }
-
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
+            setScrolled(!isHomePage || window.scrollY > 50);
         };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        handleScroll(); // Set initial value
+
+        if (isHomePage) {
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+        }
     }, [isHomePage]);
 
     const navItems = [
