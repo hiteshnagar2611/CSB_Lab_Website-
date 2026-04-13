@@ -9,8 +9,8 @@ const Footer = () => {
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     <div>
                         <div className="flex items-center space-x-2 mb-4">
-                            <div className="text-3xl">🧬</div>
-                            <span className="text-xl font-bold">CSB Lab</span>
+                            <div className="text-3xl"></div>
+                            <span className="text-xl font-bold">LT Lab</span>
                         </div>
                         <p className="text-gray-400">
                             Advancing computational structural biology research.
