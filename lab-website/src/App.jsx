@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import Projects from './components/Projects';
+import Research from './components/Research';
 import Publications from './components/Publications';
 import Resources from './components/Resources';
 import News from './components/News';
@@ -17,7 +17,7 @@ const App = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
+                <Route path="/research" element={<Research />} />
                 <Route path="/publications" element={<Publications />} />
                 <Route path="/resources" element={<Resources />} />
                 <Route path="/news" element={<News />} />
