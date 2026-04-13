@@ -141,22 +141,22 @@ const Home = () => {
 
                         <div className="grid grid-cols-2 gap-4">
                             <img
-                                src={url('/images/team/LipiT.jpg')}
+                                src={url('/images/backgrounds/Picture1.png')}
                                 alt="Lab research"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />
                             <img
-                                src={url('/images/team/shruti.jpeg')}
+                                src={url('/images/backgrounds/SARS.png')}
                                 alt="Team collaboration"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />
                             <img
-                                src={url('/images/team/tanushree.jpg')}
+                                src={url('/images/backgrounds/protine.jpg')}
                                 alt="Lab equipment"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />
                             <img
-                                src={url('/images/team/deepanshi.jpg')}
+                                src={url('/images/backgrounds/drug.webp')}
                                 alt="Research discussion"
                                 className="rounded-lg shadow-lg object-cover h-48 w-full"
                             />

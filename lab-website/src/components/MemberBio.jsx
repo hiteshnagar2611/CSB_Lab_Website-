@@ -288,7 +288,7 @@ Her work aims to develop computational tools for understanding molecular interac
         'hitesh-nagar': {
             name: 'Hitesh Nagar',
             role: 'Project Associate',
-            image: url('/images/team/placeholder.jpg'),
+            image: url('/images/team/hitesh.jpg'),
             bio: `Hitesh is a project associate working on software development for structural biology tools. He specializes in developing user-friendly interfaces for computational biology applications.
 
 Technical expertise:
@@ -336,7 +336,7 @@ His work supports the lab's research by providing efficient computational soluti
         'nabajit': {
             name: 'Nabajit',
             role: 'Intern',
-            image: url('/images/team/placeholder.jpg'),
+            image: url('/images/team/nabojit.png'),
             bio: `Nabajit is an undergraduate intern working on machine learning applications in structural biology. He is developing models for protein classification and prediction tasks.
 
 Current projects:
@@ -358,7 +358,7 @@ He is gaining valuable experience in applying AI to biological problems.`,
         'varrunavi': {
             name: 'Varrunavi',
             role: 'Intern',
-            image: url('/images/team/placeholder.jpg'),
+            image: url('/images/team/varrunavi.jpg'),
             bio: `Varrunavi is an undergraduate intern focusing on molecular visualization and educational tools for structural biology. She works on creating interactive 3D models and educational content.
 
 Current work:

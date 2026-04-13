@@ -40,16 +40,11 @@ const MemberCard = ({ member }) => {
 const Team = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const carouselImages = [
-        url('/images/team/deepanshi.JPG'),
-        url('/images/team/shailyadi.JPG'),
-        url('/images/team/shruti.jpeg'),
-        url('/images/team/akankshak.jpg'),
-        url('/images/team/aayushis.jpg'),
-        url('/images/team/akankshadi.JPG'),
-        url('/images/team/debe.jpg'),
-        url('/images/team/jesu.JPG'),
-        url('/images/team/tanushree.JPG'),
-        url('/images/team/LipiT.jpg')
+        url('/images/team/photos/p1.jpg'),
+        url('/images/team/photos/p2.jpg'),
+        url('/images/team/photos/p3.jpg'),
+        url('/images/team/photos/p4.jpg'),
+      
     ];
 
     // Auto-slide carousel
@@ -71,7 +66,7 @@ const Team = () => {
 
     const postdocs = [
         {
-            name: 'Dr. Deepanshi',
+            name: 'Dr. Deepanshi Gahlot',
             role: 'Postdoc',
             details: 'MIT',
             img: url('/images/team/deepanshi.JPG')
@@ -155,7 +150,7 @@ const Team = () => {
             name: 'Nabajit',
             role: 'Intern',
             details: 'MIT',
-            img: ''
+            img: url('/images/team/nabojit.png')
         },
         {
             name: 'Varrunavi',
