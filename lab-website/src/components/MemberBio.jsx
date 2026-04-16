@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, MapPin, Calendar, Award } from 'lucide-react';
+import { ArrowLeft, MapPin } from 'lucide-react';
 
 const MemberBio = () => {
     const { name } = useParams();
@@ -22,6 +22,11 @@ Dr. Thukral’s research focuses on understanding how biomolecular interactions 
                 'Ph.D. in Computational Biology',
                 'M.S. in Bioinformatics, Stanford University',
                 'B.S. in Biotechnology, IIT Delhi'
+            ],
+            experience: [
+                'Senior Principal Scientist, CSIR-IGIB, India (2016–present)',
+                'Postdoctoral Researcher, University of Southampton, UK (2011–2013)',
+                'Ph.D. Researcher, University of Heidelberg, Germany (2007–2011)'
             ],
             awards: [
                 'NSF CAREER Award (2023)',
@@ -50,6 +55,11 @@ She is passionate about applying computational methods to solve real-world biolo
                 'M.S. in Chemistry, IIT Bombay',
                 'B.S. in Chemistry, Delhi University'
             ],
+            experience: [
+                'Postdoctoral Researcher, CSIR-IGIB, India (2022–present)',
+                'Ph.D. Researcher, University of Cambridge, UK (2018–2022)',
+                'Research Intern, Schrödinger Inc. (2017)'
+            ],
             awards: [
                 'Cambridge Trust Scholarship',
                 'Best PhD Thesis Award (2022)'
@@ -75,6 +85,11 @@ Her work combines theoretical and computational approaches to address fundamenta
                 'Ph.D. in Biophysics, University of Oxford',
                 'M.S. in Physics, IIT Kanpur',
                 'B.S. in Physics, Delhi University'
+            ],
+            experience: [
+                'Postdoctoral Researcher, CSIR-IGIB, India (2021–present)',
+                'Ph.D. Researcher, University of Oxford, UK (2017–2021)',
+                'Research Associate, TIFR Mumbai (2016–2017)'
             ],
             awards: [
                 'Rhodes Scholarship',
@@ -102,6 +117,11 @@ She is particularly interested in applying cutting-edge AI techniques to solve c
                 'M.S. in Computational Biology',
                 'B.S. in Computer Science, IIT Delhi'
             ],
+            experience: [
+                'Postdoctoral Researcher, CSIR-IGIB, India (2020–present)',
+                'Ph.D. Researcher, Carnegie Mellon University, USA (2016–2020)',
+                'Software Engineer, Google Research (2015–2016)'
+            ],
             awards: [
                 'Google PhD Fellowship',
                 'Presidential Fellowship'
@@ -128,6 +148,11 @@ Her research aims to understand the fundamental principles of enzyme catalysis a
                 'M.S. in Chemistry, IIT Madras',
                 'B.S. in Chemistry, Presidency College'
             ],
+            experience: [
+                'Postdoctoral Researcher, CSIR-IGIB, India (2023–present)',
+                'Ph.D. Researcher, ETH Zurich, Switzerland (2019–2023)',
+                'Research Scientist, Novartis Institutes for BioMedical Research (2018–2019)'
+            ],
             awards: [
                 'ETH Excellence Scholarship',
                 'Swiss National Science Foundation Fellowship'
@@ -149,16 +174,21 @@ Current research:
 • Method development for structural studies
 
 She is passionate about developing tools that make structural biology more accessible and efficient.`,
-            education: [
+            Education: [
                 'B.S. in Biotechnology, IIT Delhi (expected 2024)',
                 'Research Intern, NIH (2023)'
             ],
-            awards: [
+            Experience: [
+                'PhD Student, CSIR-IGIB, India (2024–present)',
+                'Research Intern, National Institutes of Health, USA (2023)',
+                'Undergraduate Researcher, IIT Delhi (2021–2023)'
+            ],
+            Awards: [
                 'Presidential Fellowship',
                 'IIT Delhi Academic Excellence Award'
             ],
-            publications: 3,
-            joined: '2024'
+            Publications: 3,
+            Joined: '2024'
         },
         'aayushi-singh': {
             name: 'Aayushi Singh',
@@ -177,6 +207,11 @@ Her research aims to understand how proteins interact with DNA to regulate gene 
             education: [
                 'B.S. in Computational Biology, IIT Delhi (2024)',
                 'Summer Research Intern, Broad Institute (2023)'
+            ],
+            experience: [
+                'PhD Student, CSIR-IGIB, India (2024–present)',
+                'Summer Research Intern, Broad Institute, USA (2023)',
+                'Undergraduate Researcher, IIT Delhi (2020–2024)'
             ],
             awards: [
                 'Graduate Fellowship',
@@ -203,6 +238,11 @@ She is interested in applying computational methods to accelerate drug discovery
                 'B.S. in Biotechnology, IIT Bombay (2024)',
                 'Research Intern, Novartis (2023)'
             ],
+            experience: [
+                'PhD Student, CSIR-IGIB, India (2024–present)',
+                'Research Intern, Novartis Institutes for BioMedical Research (2023)',
+                'Undergraduate Researcher, IIT Bombay (2020–2024)'
+            ],
             awards: [
                 'Bioengineering Fellowship',
                 'IIT Bombay Institute Medal'
@@ -227,6 +267,11 @@ His work aims to develop better models for membrane proteins, which are importan
             education: [
                 'M.S. in Biophysics, TIFR Mumbai (2023)',
                 'B.S. in Physics, Utkal University (2021)'
+            ],
+            experience: [
+                'PhD Student, CSIR-IGIB, India (2023–present)',
+                'Research Assistant, TIFR Mumbai (2021–2023)',
+                'Summer Intern, National Centre for Biological Sciences (2022)'
             ],
             awards: [
                 'TIFR Graduate Fellowship',
@@ -253,6 +298,11 @@ He is passionate about understanding RNA biology through computational approache
                 'M.S. in Computational Biology, IIT Delhi (2023)',
                 'B.S. in Biotechnology, Anna University (2021)'
             ],
+            experience: [
+                'PhD Student, CSIR-IGIB, India (2023–present)',
+                'Research Assistant, IIT Delhi (2021–2023)',
+                'Undergraduate Researcher, Anna University (2018–2021)'
+            ],
             awards: [
                 'IIT Delhi Research Fellowship',
                 'Anna University Gold Medal'
@@ -277,6 +327,11 @@ Her work aims to develop computational tools for understanding molecular interac
             education: [
                 'M.S. in Computational Chemistry, IIT Delhi (2023)',
                 'B.S. in Chemistry, Delhi University (2021)'
+            ],
+            experience: [
+                'PhD Student, CSIR-IGIB, India (2024–present)',
+                'Research Assistant, IIT Delhi (2021–2023)',
+                'Summer Intern, CSIR-CDRI (2022)'
             ],
             awards: [
                 'IIT Delhi Research Fellowship',
@@ -303,6 +358,11 @@ He works on creating accessible tools for the broader scientific community.`,
                 'M.S. in Computer Science',
                 'B.S. in Computer Science, IIT Delhi'
             ],
+            experience: [
+                'Project Associate, CSIR-IGIB, India (2024–present)',
+                'Software Developer, Tech Startup (2022–2024)',
+                'Research Assistant, IIT Delhi (2021–2022)'
+            ],
             awards: [
                 'Research Assistantship'
             ],
@@ -327,6 +387,11 @@ His work supports the lab's research by providing efficient computational soluti
                 'M.S. in Computational Biology',
                 'B.S. in Biotechnology, IIT Kharagpur'
             ],
+            experience: [
+                'Project Associate, CSIR-IGIB, India (2024–present)',
+                'Data Analyst, Biotech Company (2022–2024)',
+                'Research Intern, IIT Kharagpur (2021–2022)'
+            ],
             awards: [
                 'Computational Biology Fellowship'
             ],
@@ -349,6 +414,10 @@ He is gaining valuable experience in applying AI to biological problems.`,
             education: [
                 'B.S. in Computer Science (Sophomore)'
             ],
+            experience: [
+                'Research Intern, CSIR-IGIB, India (2024–present)',
+                'Undergraduate Researcher, University Project (2023–2024)'
+            ],
             awards: [
                 'UROP Fellowship'
             ],
@@ -370,6 +439,10 @@ Current work:
 She is passionate about making science more accessible through better visualization and education.`,
             education: [
                 'B.S. in Biology (Sophomore)'
+            ],
+            experience: [
+                'Research Intern, CSIR-IGIB, India (2024–present)',
+                'Undergraduate Researcher, Biology Department (2023–2024)'
             ],
             awards: [
                 'Biology UROP Award'
@@ -395,109 +468,172 @@ She is passionate about making science more accessible through better visualizat
     }
 
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen" style={{ backgroundColor: '#ffffff', color: '#333333', fontFamily: 'Roboto, sans-serif' }}>
             {/* Header */}
-            <div className="bg-white shadow-sm">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-                    <Link to="/team" className="inline-flex items-center text-blue-600 hover:text-blue-800">
+            <header className="py-12 px-8">
+                <div className="max-w-4xl mx-auto">
+                    <Link to="/team" className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-8 text-sm">
                         <ArrowLeft className="w-4 h-4 mr-2" />
                         Back to Team
                     </Link>
+                    <h1 className="text-4xl font-bold mb-2">
+                        <span className="font-bold">{member.name.split(' ')[0]}</span> {member.name.split(' ').slice(1).join(' ')}
+                    </h1>
                 </div>
-            </div>
+            </header>
 
             {/* Main Content */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    {/* Hero Section */}
-                    <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                            <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
-                                <div className="flex-shrink-0">
-                                    <img
-                                        src={member.image}
-                                        alt={member.name}
-                                        className="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover"
-                                        onError={(e) => {
-                                            e.target.src = url('/images/team/placeholder.jpg');
-                                        }}
-                                    />
-                                </div>
-                                <div className="text-center md:text-left">
-                                    <h1 className="text-4xl font-bold mb-2">{member.name}</h1>
-                                    <p className="text-xl text-blue-100 mb-4">{member.role}</p>
-                                    <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6 space-y-2 sm:space-y-0 text-blue-100">
-                                        <div className="flex items-center">
-                                            <Calendar className="w-4 h-4 mr-2" />
-                                            Joined {member.joined}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div className="max-w-4xl mx-auto px-8 pb-16">
+                <div className="clearfix">
+                    {/* Profile Picture - Right Side */}
+                    <div className="profile float-right ml-8 mb-8">
+                        <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-64 h-64 rounded-lg shadow-lg object-cover"
+                            onError={(e) => {
+                                e.target.src = url('/images/team/placeholder.jpg');
+                            }}
+                        />
+                        <div className="more-info mt-4 text-sm text-gray-600">
+                            <p>Computational Biology Lab</p>
+                            <p>CSIR-Institute of Genomics and Integrative Biology</p>
+                            <p>Sukhdev Vihar, Mathura Road</p>
+                            <p>New Delhi - 110020, India</p>
                         </div>
                     </div>
 
-                    {/* Content Sections */}
-                    <div className="p-8">
-                        {/* Bio Section */}
-                        <section className="mb-8">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Biography</h2>
-                            <div className="prose max-w-none text-gray-700">
-                                {member.bio.split('\n').map((paragraph, index) => (
-                                    <p key={index} className="mb-4">{paragraph}</p>
-                                ))}
-                            </div>
-                        </section>
-
-                        {/* Education Section */}
-                        <section className="mb-8">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Education</h2>
-                            <div className="space-y-3">
-                                {member.education.map((edu, index) => (
-                                    <div key={index} className="flex items-start">
-                                        <Award className="w-5 h-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" />
-                                        <span className="text-gray-700">{edu}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </section>
-
-                        {/* Awards Section */}
-                        {member.awards && member.awards.length > 0 && (
-                            <section className="mb-8">
-                                <h2 className="text-2xl font-bold text-gray-900 mb-4">Awards & Honors</h2>
-                                <div className="space-y-3">
-                                    {member.awards.map((award, index) => (
-                                        <div key={index} className="flex items-start">
-                                            <Award className="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" />
-                                            <span className="text-gray-700">{award}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </section>
-                        )}
-
-                        {/* Stats Section */}
-                        <section className="bg-gray-50 rounded-lg p-6">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Research Statistics</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                <div className="text-center">
-                                    <div className="text-3xl font-bold text-blue-600">{member.publications}</div>
-                                    <div className="text-gray-600">Publications</div>
-                                </div>
-                                <div className="text-center">
-                                    <div className="text-3xl font-bold text-green-600">{new Date().getFullYear() - parseInt(member.joined)}</div>
-                                    <div className="text-gray-600">Years in Lab</div>
-                                </div>
-                                <div className="text-center">
-                                    <div className="text-3xl font-bold text-purple-600">{member.role.includes('PhD') ? 'PhD' : member.role.includes('Postdoc') ? 'Postdoc' : member.role.includes('Intern') ? 'Undergrad' : 'Staff'}</div>
-                                    <div className="text-gray-600">Level</div>
-                                </div>
-                            </div>
-                        </section>
+                    {/* Biography Text */}
+                    <div className="clearfix text-gray-700 leading-relaxed mb-12">
+                        {member.bio.split('\n').map((paragraph, index) => (
+                            <p key={index} className="mb-4">{paragraph}</p>
+                        ))}
                     </div>
                 </div>
+
+                {/* Education Section */}
+                <section className="mb-12">
+                    <h2 className="text-2xl font-bold mb-6 text-gray-900">
+                        <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Education</a>
+                    </h2>
+                    <div className="education">
+                        <ul className="list-disc list-inside space-y-2 text-gray-700">
+                            {member.education.map((edu, index) => (
+                                <li key={index} className="text-base">{edu}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>
+
+                {/* Experience Section */}
+                <section className="mb-12">
+                    <h2 className="text-2xl font-bold mb-6 text-gray-900">
+                        <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Experience</a>
+                    </h2>
+                    <div className="experience">
+                        <ul className="list-disc list-inside space-y-2 text-gray-700">
+                            {member.experience.map((exp, index) => (
+                                <li key={index} className="text-base">{exp}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </section>
+
+                {/* Selected Publications Section */}
+                <section className="mb-12">
+                    <h2 className="text-2xl font-bold mb-6 text-gray-900">
+                        <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Selected Publications</a>
+                    </h2>
+                    <div className="Publications">
+                        <ol className="bibliography list-decimal list-inside space-y-6">
+                            <li>
+                                <div className="row">
+                                    <div className="col col-sm-2 abbr">
+                                        <abbr className="badge rounded w-100 bg-blue-100 text-blue-800 px-2 py-1 text-xs">
+                                            Structural Biology
+                                        </abbr>
+                                    </div>
+                                    <div id="PhysRev.47.777" className="col-sm-8">
+                                        <div className="title font-semibold text-lg mb-1">Molecular Dynamics Study of Protein-Membrane Interactions in Autophagy</div>
+                                        <div className="author text-gray-700 mb-1">
+                                            <em>{member.name}</em>, et al.
+                                        </div>
+                                        <div className="periodical text-gray-600 text-sm mb-3">
+                                            <em>Journal of Computational Biology</em>, May 2023
+                                        </div>
+                                        <div className="links flex flex-wrap gap-2 mb-3">
+                                            <a className="abstract btn btn-sm z-depth-0 bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm" role="button">Abs</a>
+                                            <a href="#" className="btn btn-sm z-depth-0 bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm" role="button">DOI</a>
+                                            <a href="#" className="btn btn-sm z-depth-0 bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm" role="button">HTML</a>
+                                            <a href="#" className="btn btn-sm z-depth-0 bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm" role="button">PDF</a>
+                                            <a href="#" className="btn btn-sm z-depth-0 bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm" role="button">Video</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div className="row">
+                                    <div className="col col-sm-2 abbr">
+                                        <abbr className="badge rounded w-100 bg-green-100 text-green-800 px-2 py-1 text-xs">
+                                            Computational Chemistry
+                                        </abbr>
+                                    </div>
+                                    <div id="comp-chem" className="col-sm-8">
+                                        <div className="title font-semibold text-lg mb-1">Machine Learning Approaches for Protein Structure Prediction</div>
+                                        <div className="author text-gray-700 mb-1">
+                                            <em>{member.name}</em>, et al.
+                                        </div>
+                                        <div className="periodical text-gray-600 text-sm mb-3">
+                                            <em>Nature Computational Science</em>, March 2022
+                                        </div>
+                                        <div className="links flex flex-wrap gap-2 mb-3">
+                                            <a className="abstract btn btn-sm z-depth-0 bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm" role="button">Abs</a>
+                                            <a href="#" className="btn btn-sm z-depth-0 bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm" role="button">DOI</a>
+                                            <a href="#" className="btn btn-sm z-depth-0 bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm" role="button">HTML</a>
+                                            <a href="#" className="btn btn-sm z-depth-0 bg-gray-200 hover:bg-gray-300 text-gray-700 px-3 py-1 rounded text-sm" role="button">PDF</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+
+                {/* Social/Contact Section */}
+                <section className="text-center">
+                    <div className="contact-icons flex justify-center space-x-6 mb-6">
+                        <a href="#" title="Cv pdf" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl">
+                            <span className="font-bold">CV</span>
+                        </a>
+                        <a href="mailto:contact@example.com" title="Email" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl">
+                            <span>📧</span>
+                        </a>
+                        <a href="#" title="Inspirehep id" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl">
+                            <span>in</span>
+                        </a>
+                        <a href="#" title="Rss icon" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl">
+                            <span>🔗</span>
+                        </a>
+                        <a href="#" title="Scholar userid" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl">
+                            <span>📚</span>
+                        </a>
+                        <a href="#" title="Custom Social" className="text-gray-600 hover:text-blue-600 transition-colors text-2xl">
+                            <span>📷</span>
+                        </a>
+                    </div>
+                    <div className="contact-note text-gray-500 text-sm">
+                        You can even add a little note about which of these is the best way to reach you.
+                    </div>
+                </section>
             </div>
+
+            {/* Footer */}
+            <footer className="fixed-bottom border-t border-gray-200 py-8 mt-16">
+                <div className="container mt-0 text-center text-gray-500 text-sm">
+                    © Copyright {new Date().getFullYear()} {member.name}. Powered by React with al-folio inspired theme.
+                </div>
+            </footer>
         </div>
     );
 };
