@@ -355,11 +355,10 @@ Technical expertise:
 
 He works on creating accessible tools for the broader scientific community.`,
             education: [
-                'M.S. in Computer Science',
-                'B.S. in Computer Science, IIT Delhi'
+                'MBM University, Jodhpur, India (June 2025)'
             ],
             experience: [
-                'Project Associate, CSIR-IGIB, India (2024–present)',
+                'Project Associate, CSIR-IGIB, India (Jan 2026–present)',
                 'Software Developer, Tech Startup (2022–2024)',
                 'Research Assistant, IIT Delhi (2021–2022)'
             ],
