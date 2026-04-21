@@ -2,6 +2,55 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, MapPin } from 'lucide-react';
 
+// Helper function to render bio text with markdown-style links
+const renderBioWithLinks = (text) => {
+    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    const parts = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = linkRegex.exec(text)) !== null) {
+        // Add text before the link
+        if (match.index > lastIndex) {
+            parts.push({
+                type: 'text',
+                content: text.substring(lastIndex, match.index)
+            });
+        }
+        // Add the link
+        parts.push({
+            type: 'link',
+            text: match[1],
+            url: match[2]
+        });
+        lastIndex = linkRegex.lastIndex;
+    }
+    // Add remaining text
+    if (lastIndex < text.length) {
+        parts.push({
+            type: 'text',
+            content: text.substring(lastIndex)
+        });
+    }
+
+    return parts.map((part, idx) => {
+        if (part.type === 'link') {
+            return (
+                <a
+                    key={idx}
+                    href={part.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                >
+                    {part.text}
+                </a>
+            );
+        }
+        return part.content;
+    });
+};
+
 const MemberBio = () => {
     const { name } = useParams();
 
@@ -344,23 +393,22 @@ Her work aims to develop computational tools for understanding molecular interac
             name: 'Hitesh Nagar',
             role: 'Project Associate',
             image: url('/images/team/hitesh.jpg'),
-            bio: `Hitesh is a project associate working on software development for structural biology tools. He specializes in developing user-friendly interfaces for computational biology applications.
+            bio: `I am a Project Associate at CSIR-IGIB in New Delhi, where I work with [Dr. Lipi Thukral](https://www.igib.res.in/?q=LipiThukral). My current research focuses on protein language models (PLMs), graph neural networks (GNNs), and AI for biology.
 
-Technical expertise:
-• Full-stack web development
-• Python programming
-• Data visualization
-• Database management
-• API development
+I have been fortunate to work with amazing mentors across different institutions. In 2025, I worked at Secure Meters Limited with Rahul Mathur on network security. In summer 2024, I worked with [Jythi Veduradha](https://jyothivedurada.github.io/) at IIT Hyderabad on API misuse prediction, and with [Jimson Mathew](https://iitp.irins.org/profile/62448) at IIT Patna on automated catalogue creation using computer vision. In summer 2023, I was part of the VL2G team at IIT Jodhpur, led by [Anand Mishra](https://anandmishra22.github.io/), where I developed a scene-text annotation tool for Indian languages.
 
-He works on creating accessible tools for the broader scientific community.`,
+My research interests lie in deep learning, natural language processing, and large language models. I am particularly interested in building AI applications across domains, bridging research with real-world impact.`,
             education: [
                 'MBM University, Jodhpur, India (June 2025)'
             ],
             experience: [
-                'Project Associate, CSIR-IGIB, India (Jan 2026–present)',
-                'Software Developer, Tech Startup (2022–2024)',
-                'Research Assistant, IIT Delhi (2021–2022)'
+                'Secure Meters Limited, Graduate Engineer trainee(Network Security) | Udaipur, RJ July 2025 ‑ Present\n• Managed and secured computer networks by configuring firewalls, switches, and applying cybersecurity best practices to prevent threats and ensure system integrity. Managed around 50+ tickets every month.',
+                'Secure Meters Limited, Software Engineering Intern | Udaipur, RJ Jan 2025 ‑ Feb 2025\n• Designed and implemented an Employee Benevolent Software System, transitioning the company\'s process from offline (paper-based) to a fully online platform, enhancing efficiency by 70%, accessibility, and record management.',
+                'Indian Institute of Technology Hyderabad, Summer Intern | Sangareedy, TS June 2024 ‑ July 2024\n• Built and optimized a dataset of 15K+ code samples for API misuse prediction, enhancing model training efficiency and accuracy in software reliability tasks.',
+                'Indian Institute of Technology Patna, Computer Vision Intern | Remote March 2024 ‑ Apr 2024\n• Reduced recognition errors by 26% and improved text recognition accuracy by 18% in a supermarket product identification pipeline.\n• Implemented advanced image processing techniques including skeletonization, binary conversion, and ABINET based on ASTER for robust recognition across a self made labeled dataset of 250,000+ images spanning 500+ brand classes.',
+                'Indian Institute of Technology Goa, NSM Intern | Remote Jan 2024 ‑ Feb 2024\n• Developed and optimized C++ code for CFD Solver , ensuring high performance on various GPU architectures using Kokkos.\n• Converted CUDA/OpenACC code to Kokkos, enabling performance portability across NVIDIA, AMD, and Intel GPUs with CUDA and OpenMP.',
+                'Indian Institute of Technology Jodhpur, Project Intern | Jodhpur, RJ June 2023 ‑ July 2023\n• Developed and deployed a desktop application, enabling seamless text annotation in 10+ Indian regional languages for computer vision tasks; enhanced annotation process and accuracy by 40%.',
+                'Oil and Natural Gas Corporation Dehradun, Summer Trainee | Remote June 2023 ‑ July 2023\n• Led the development and implementation of machine learning models for facies identification from well logs, increasing accuracy by 30% and efficiency by 40% in geological analysis for oil discovery.'
             ],
             awards: [
                 'Research Assistantship'
@@ -505,7 +553,7 @@ She is passionate about making science more accessible through better visualizat
                     {/* Biography Text */}
                     <div className="clearfix text-gray-700 leading-relaxed mb-12">
                         {member.bio.split('\n').map((paragraph, index) => (
-                            <p key={index} className="mb-4">{paragraph}</p>
+                            <p key={index} className="mb-4">{renderBioWithLinks(paragraph)}</p>
                         ))}
                     </div>
                 </div>
@@ -530,11 +578,23 @@ She is passionate about making science more accessible through better visualizat
                         <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Experience</a>
                     </h2>
                     <div className="experience">
-                        <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            {member.experience.map((exp, index) => (
-                                <li key={index} className="text-base">{exp}</li>
-                            ))}
-                        </ul>
+                        <div className="space-y-6">
+                            {member.experience.map((exp, index) => {
+                                const lines = exp.split('\n');
+                                const title = lines[0];
+                                const bullets = lines.slice(1);
+                                return (
+                                    <div key={index} className="mb-4">
+                                        <h4 className="font-semibold text-lg text-gray-900 mb-2">{title}</h4>
+                                        <ul className="list-disc list-inside ml-4 space-y-1 text-gray-700">
+                                            {bullets.map((bullet, i) => (
+                                                <li key={i} className="text-base leading-relaxed">{bullet}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                );
+                            })}
+                        </div>
                     </div>
                 </section>
 
