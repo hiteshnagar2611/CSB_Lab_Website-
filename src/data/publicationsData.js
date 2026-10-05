@@ -1,6 +1,38 @@
 export const publications = [
     {
         id: 1,
+        authors: "Fatihi S, Khushalani DM, Kar J, Ghosh S, Singh A, Roy S, Banerjee A, Mohan N, Thukral L*",
+        title: "LC3 forms functional nanoclusters on autophagosomes",
+        journal: "EMBO Reports",
+        journalAbbrev: "EMBO Rep",
+        year: 2026,
+        volume: "",
+        issue: "",
+        pages: "",
+        month: "Sep 25",
+        doi: "10.1038/s44319-026-00931-0",
+        image: "/images/publications/pub-1.jpg",
+        topics: ["Autophagy", "LC3", "Membrane Biology", "Super-resolution"],
+        correspondingAuthor: true
+    },
+    {
+        id: 2,
+        authors: "Gahlot D, Castin J, Mathur S, Das D, Kumar A, Arun A, Gain C, Sharma M, Pal RK, Jain N, Biswal BK, Singh R, Thukral L*",
+        title: "A programmable lipid-triggered allosteric site modulates LC3 LIR receptor binding activity",
+        journal: "Nature Communications",
+        journalAbbrev: "Nat Commun",
+        year: 2026,
+        volume: "17",
+        issue: "1",
+        pages: "9144",
+        month: "Aug 28",
+        doi: "10.1038/s41467-026-76697-9",
+        image: "/images/publications/pub-2.jpg",
+        topics: ["Autophagy", "LC3", "Allostery", "Membrane Biology"],
+        correspondingAuthor: true
+    },
+    {
+        id: 3,
         authors: "Cheng MTK, Altaf M, Castin J, Reuschl AK, Sievers BL, Kamelian K, Mesner D, Morse RB, Abdullahi A, Meng B, Csiba K, Cambridge NIHR Bioresource, Kemp SA, Martin DP, Jolly C, Ruis C, Thukral L*, Gupta RK*",
         title: "Signatures of omicron-like adaptation in early SARS-CoV-2 variants and chronic infection",
         journal: "Cell Reports",
@@ -11,11 +43,12 @@ export const publications = [
         pages: "116135",
         month: "Aug 26",
         doi: "10.1016/j.celrep.2025.116135",
+        image: "/images/publications/pub-3.jpg",
         topics: ["SARS-CoV-2", "Omicron", "Viral Evolution"],
         correspondingAuthor: true
     },
     {
-        id: 2,
+        id: 4,
         authors: "Rathore S, Gahlot D, Castin J, Pandey A, Arvindekar S, Viswanath S, Thukral L*",
         title: "Multiscale simulations reveal architecture of NOTCH protein and ligand specific features",
         journal: "Biophysical Journal",
@@ -26,11 +59,12 @@ export const publications = [
         pages: "393-407",
         month: "Jan 21",
         doi: "10.1016/j.bpj.2024.12.014",
+        image: "/images/publications/pub-4.jpg",
         topics: ["NOTCH", "Molecular Dynamics", "Protein Structure"],
         correspondingAuthor: true
     },
     {
-        id: 3,
+        id: 5,
         authors: "Das D, Sharma M, Gahlot D, Nia SS, Gain C, Mecklenburg M, Zhou ZH, Bourdenx M, Thukral L, Martinez-Lopez N, Singh R",
         title: "VPS4A is the selective receptor for lipophagy in mice and humans",
         journal: "Molecular Cell",
@@ -41,11 +75,12 @@ export const publications = [
         pages: "4436-4453.e8",
         month: "Nov 21",
         doi: "10.1016/j.molcel.2024.10.022",
+        image: "/images/publications/pub-5.jpg",
         topics: ["Autophagy", "Lipophagy", "Membrane Biology"],
         correspondingAuthor: false
     },
     {
-        id: 4,
+        id: 6,
         authors: "Neha, Castin J, Fatihi S, Gahlot D, Arun A, Thukral L*",
         title: "Autophagy 3D: a comprehensive autophagy structure database",
         journal: "Database (Oxford)",
@@ -56,11 +91,12 @@ export const publications = [
         pages: "baae088",
         month: "",
         doi: "10.1093/database/baae088",
+        image: "/images/publications/pub-6.jpg",
         topics: ["Autophagy", "Database", "Structural Biology"],
         correspondingAuthor: true
     },
     {
-        id: 5,
+        id: 7,
         authors: "Montero-Vergara J, Plachetta K, Kinch L, Bernhardt S, Kashyap K, Levine B, Thukral L, Vetter M, Thomssen C, Wiemann S, Peña-Llopis S, Jendrossek V, Vega-Rubin-de-Celis S",
         title: "GRB2 is a BECN1 interacting protein that regulates autophagy",
         journal: "Cell Death & Disease",
@@ -71,11 +107,12 @@ export const publications = [
         pages: "14",
         month: "Jan 5",
         doi: "10.1038/s41419-023-06387-7",
+        image: "/images/publications/pub-7.jpg",
         topics: ["Autophagy", "BECN1", "Cell Signaling"],
         correspondingAuthor: false
     },
     {
-        id: 6,
+        id: 8,
         authors: "Menon D, Bhapkar A, Manchandia B, Charak G, Rathore S, Jha RM, Nahak A, Mondal M, Omrane M, Bhaskar AK, Thukral L, Thiam AR, Gandotra S",
         title: "ARL8B mediates lipid droplet contact and delivery to lysosomes for lipid remobilization",
         journal: "Cell Reports",
@@ -86,11 +123,12 @@ export const publications = [
         pages: "113203",
         month: "Sep 30",
         doi: "10.1016/j.celrep.2023.113203",
+        image: "/images/publications/pub-8.jpg",
         topics: ["Lipid Droplets", "Lysosomes", "Membrane Biology"],
         correspondingAuthor: false
     },
     {
-        id: 7,
+        id: 9,
         authors: "Malhotra N, Khatri S, Kumar A, Arun A, Daripa P, Fatihi S, Venkadesan S, Jain N, Thukral L*",
         title: "AI-based Alphafold2 significantly expands the structural space of the autophagy pathway",
         journal: "Autophagy",
@@ -101,11 +139,12 @@ export const publications = [
         pages: "1-20",
         month: "Jul 30",
         doi: "10.1080/15548627.2023.2238578",
+        image: "/images/publications/pub-9.jpg",
         topics: ["AI/ML", "AlphaFold", "Autophagy", "Protein Structure"],
         correspondingAuthor: true
     },
     {
-        id: 8,
+        id: 10,
         authors: "Zhang W, Nishimura T, Gahlot D, Saito C, David C, Jefferies HBJ, Schreiber A, Thukral L, Tooze SA",
         title: "Autophagosome membrane expansion is mediated by the N-terminal and cis-membrane association of human ATG8s",
         journal: "eLife",
@@ -116,11 +155,12 @@ export const publications = [
         pages: "e89185",
         month: "",
         doi: "10.7554/eLife.89185",
+        image: "/images/publications/pub-10.jpg",
         topics: ["Autophagy", "ATG8", "Membrane Biology"],
         correspondingAuthor: false
     },
     {
-        id: 9,
+        id: 11,
         authors: "Tooze SA, Zhang W, Lazzeri G, Gahlot D, Thukral L, Covino R, Nishimura T",
         title: "Membrane association of ATG8 conjugation machinery emerges as a key regulatory feature for autophagosome biogenesis",
         journal: "FEBS Letters",
@@ -131,11 +171,12 @@ export const publications = [
         pages: "",
         month: "",
         doi: "10.1002/1873-3468.14676",
+        image: "/images/publications/pub-11.jpg",
         topics: ["Autophagy", "ATG8", "Membrane Biology"],
         correspondingAuthor: false
     },
     {
-        id: 10,
+        id: 12,
         authors: "Subissi L, Gottberg AV, Thukral L, et al.",
         title: "An early warning system for emerging SARS-CoV-2 variants",
         journal: "Nature Medicine",
@@ -146,11 +187,12 @@ export const publications = [
         pages: "1110-1115",
         month: "",
         doi: "10.1038/s41591-022-01836-w",
+        image: "/images/publications/pub-12.jpg",
         topics: ["SARS-CoV-2", "Viral Variants", "Genomics"],
         correspondingAuthor: false
     },
     {
-        id: 11,
+        id: 13,
         authors: "Meng B, Abdullahi A, Ferreira IATM, Goonawardane N, Saito A, Kimura I, Yamasoba D, Gerber PP, Fatihi S, Rathore S, Zepeda SK, Papa G, Kemp SA, Ikeda T, Toyoda M, Tan TS, Kuramochi J, Mitsunaga S, Ueno T, Castillo-Olivares J, Pinto D, Irie T, Sotomayor-González A, Sserunkuma J, Selhorst P, Mlcochova P, Madissoon E, Thukral L, et al.",
         title: "Altered TMPRSS2 usage by SARS-CoV-2 Omicron impacts tropism and fusogenicity",
         journal: "Nature",
@@ -161,11 +203,12 @@ export const publications = [
         pages: "706-714",
         month: "Mar",
         doi: "10.1038/s41586-022-04474-x",
+        image: "/images/publications/pub-13.jpg",
         topics: ["SARS-CoV-2", "Omicron", "TMPRSS2", "Membrane Fusion"],
         correspondingAuthor: false
     },
     {
-        id: 12,
+        id: 14,
         authors: "Pathak AK, Mishra GP, Uppili B, Walia S, Fatihi S, Abbas T, Banu S, Ghosh A, Kanampalliwar A, Jha A, Fatima S, Aggarwal S, Dhar MS, Marwal R, Radhakrishnan VS, Ponnusamy K, Kabra S, Rakshit P, Bhoyar RC, Jain A, Divakar MK, Imran M, Faruq M, Sowpati DT, Thukral L, Raghav SK, Mukerji M",
         title: "Spatio-temporal dynamics of intra-host variability in SARS-CoV-2 genomes",
         journal: "Nucleic Acids Research",
@@ -176,11 +219,12 @@ export const publications = [
         pages: "1551-1561",
         month: "Feb 28",
         doi: "10.1093/nar/gkab1297",
+        image: "/images/publications/pub-14.jpg",
         topics: ["SARS-CoV-2", "Genomics", "Viral Evolution"],
         correspondingAuthor: false
     },
     {
-        id: 13,
+        id: 15,
         authors: "Paul S, Fatihi S, Sharma S, Kutum R, Fields R, Pant HC, Thukral L, Binukumar BK",
         title: "Cyclin dependent kinase 5 regulates cPLA2 activity and neuroinflammation in Parkinson's disease",
         journal: "eNeuro",
@@ -191,11 +235,12 @@ export const publications = [
         pages: "ENEURO.0180-22.2022",
         month: "",
         doi: "10.1523/ENEURO.0180-22.2022",
+        image: "/images/publications/pub-15.jpg",
         topics: ["Neuroscience", "Parkinson's Disease", "CDK5"],
         correspondingAuthor: false
     },
     {
-        id: 14,
+        id: 16,
         authors: "Fatihi S, Rathore S, Pathak A, Gahlot D, Mukerji M, Jatana N, Thukral L*",
         title: "A rigorous framework for detecting SARS-CoV-2 spike protein mutational ensemble from genomic and structural features",
         journal: "Current Research in Structural Biology",
@@ -206,11 +251,12 @@ export const publications = [
         pages: "290-300",
         month: "",
         doi: "10.1016/j.crstbi.2021.11.002",
+        image: "/images/publications/pub-16.jpg",
         topics: ["SARS-CoV-2", "Spike Protein", "Mutational Analysis"],
         correspondingAuthor: true
     },
     {
-        id: 15,
+        id: 17,
         authors: "Dhar MS, Marwal R, Radhakrishnan VS, Ponnusamy K, Jolly B, Bhoyar RC, Sardana V, Naushin S, Rophina M, Mellan TA, Mishra S, Whittaker C, Fatihi S, Datta M, Singh P, Sharma U, Ujjainiya R, Bhatheja N, Divakar MK, Singh MK, Imran M, Senthivel V, Maurya R, Jha N, Mehta P, A V, Jha AN, Madan P, Ram VS, Singh P, Sharma P, Sharma P, Faruq M, Thukral L, et al.",
         title: "Genomic characterization and epidemiology of an emerging SARS-CoV-2 variant in Delhi, India",
         journal: "Science",
@@ -221,11 +267,12 @@ export const publications = [
         pages: "995-999",
         month: "Nov 19",
         doi: "10.1126/science.abj9932",
+        image: "/images/publications/pub-17.jpg",
         topics: ["SARS-CoV-2", "Genomics", "Epidemiology", "India"],
         correspondingAuthor: false
     },
     {
-        id: 16,
+        id: 18,
         authors: "Shastri J, Parikh S, Agrawal S, Chatterjee N, Pathak M, Chaudhary S, Sharma C, Kanakan A, AV, Vasudevan JS, Maurya R, Fatihi S, Thukral L, Agrawal A, Pinto L, Pandey R, Sunil S",
         title: "Clinical, serological, and whole genome sequence analyses to confirm SARS-CoV-2 reinfection in patients from Mumbai, India",
         journal: "Frontiers in Medicine",
@@ -236,11 +283,12 @@ export const publications = [
         pages: "631769",
         month: "",
         doi: "10.3389/fmed.2021.631769",
+        image: "/images/publications/pub-18.jpg",
         topics: ["SARS-CoV-2", "Reinfection", "Genomics"],
         correspondingAuthor: false
     },
     {
-        id: 17,
+        id: 19,
         authors: "Klionsky DJ, Abdel-Aziz AK, Abdelfatah S, Abdellatif M, Abdoli A, Abel S, Abeliovich H, Abildgaard MH, Abudu YP, Acevedo-Arozena A, Achar SR, Achenbach J, Acker H, Adamopoulos IE, Adams CM, Adams PD, Adeli K, Adolph TE, Adornetto A, … Thukral L, et al.",
         title: "Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition)",
         journal: "Autophagy",
@@ -251,11 +299,12 @@ export const publications = [
         pages: "1-382",
         month: "",
         doi: "10.1080/15548627.2020.1797280",
+        image: "/images/publications/pub-19.jpg",
         topics: ["Autophagy", "Guidelines", "Assays"],
         correspondingAuthor: false
     },
     {
-        id: 18,
+        id: 20,
         authors: "Kumar P, Pandey R, Sharma P, Dhar MS, AV, Uppili B, Vashisht H, Wadhwa S, Tyagi N, Fatihi S, Sharma U, Singh P, Lall H, Datta M, Gupta P, Saini N, Tewari A, Nandi B, Kumar D, Bag S, Gahlot D, Rathore S, Jatana N, Jaiswal V, Gogia H, Madan P, Singh S, Singh P, Dash D, Bala M, Kabra S, Singh S, Mukerji M, Thukral L, Faruq M, Agrawal A, Rakshit P",
         title: "Integrated genomic view of SARS-CoV-2 in India",
         journal: "Wellcome Open Research",
@@ -266,11 +315,12 @@ export const publications = [
         pages: "184",
         month: "",
         doi: "10.12688/wellcomeopenres.16119.1",
+        image: "/images/publications/pub-20.jpg",
         topics: ["SARS-CoV-2", "Genomics", "India"],
         correspondingAuthor: false
     },
     {
-        id: 19,
+        id: 21,
         authors: "Jatana N, Aswin SK, Rathore S, Thukral L*",
         title: "Revealing conformational transitions in G-protein-coupled receptor rhodopsin upon phosphorylation",
         journal: "Biochemistry",
@@ -281,11 +331,12 @@ export const publications = [
         pages: "297-302",
         month: "Jan 28",
         doi: "10.1021/acs.biochem.9b00884",
+        image: "/images/publications/placeholder.jpg",
         topics: ["GPCR", "Rhodopsin", "Molecular Dynamics"],
         correspondingAuthor: true
     },
     {
-        id: 20,
+        id: 22,
         authors: "Jatana N, Ascher DB, Pires DEV, Gokhale RS, Thukral L*",
         title: "Human LC3 and GABARAP subfamily members achieve functional specificity via specific structural modulations",
         journal: "Autophagy",
@@ -296,11 +347,12 @@ export const publications = [
         pages: "239-255",
         month: "Feb",
         doi: "10.1080/15548627.2019.1606636",
+        image: "/images/publications/pub-22.jpg",
         topics: ["Autophagy", "LC3", "GABARAP", "Protein Structure"],
         correspondingAuthor: true
     },
     {
-        id: 21,
+        id: 23,
         authors: "Chua NK, Howe V, Jatana N, Hart-Smith G, Scott AN, Thukral L, Brown AJ",
         title: "Squalene monooxygenase at the nexus between cholesterol homeostasis and proteostasis",
         journal: "FASEB Journal",
@@ -311,11 +363,12 @@ export const publications = [
         pages: "1-1",
         month: "Apr",
         doi: "10.1096/fasebj.2020.34.s1.03280",
+        image: "/images/publications/placeholder.jpg",
         topics: ["Cholesterol", "Proteostasis", "Squalene Monooxygenase"],
         correspondingAuthor: false
     },
     {
-        id: 22,
+        id: 24,
         authors: "Grover R, Burse SA, Shankrit S, Aggarwal A, Kirty K, Narta K, Srivastav R, Ray AK, Malik G, Vats A, Motiani RK, Thukral L, Roy SS, Bhattacharya S, Sharma R, Natarajan K, Mukerji M, Pandey R, Gokhale RS, Natarajan VT",
         title: "Myg1 exonuclease couples the nuclear and mitochondrial translational programs through RNA processing",
         journal: "Nucleic Acids Research",
@@ -326,11 +379,12 @@ export const publications = [
         pages: "5852-5866",
         month: "Jun 20",
         doi: "10.1093/nar/gkz371",
+        image: "/images/publications/pub-24.jpg",
         topics: ["RNA Processing", "Mitochondria", "Exonuclease"],
         correspondingAuthor: false
     },
     {
-        id: 23,
+        id: 25,
         authors: "Mitra M, Asad M, Kumar S, Yadav K, Chaudhary S, Bhavesh NS, Khalid S, Thukral L*, Bajaj A*",
         title: "Distinct intramolecular hydrogen bonding dictates antimicrobial action of membrane-targeting amphiphiles",
         journal: "Journal of Physical Chemistry Letters",
@@ -341,11 +395,12 @@ export const publications = [
         pages: "754-760",
         month: "Feb 21",
         doi: "10.1021/acs.jpclett.8b03508",
+        image: "/images/publications/placeholder.jpg",
         topics: ["Antimicrobial", "Membrane Biology", "Molecular Dynamics"],
         correspondingAuthor: true
     },
     {
-        id: 24,
+        id: 26,
         authors: "Panchal V, Jatana N, Malik A, Taneja B, Pal R, Bhatt A, Besra GS, Thukral L, Chaudhary S, Rao V",
         title: "A novel mutation alters the stability of PapA2 resulting in the complete abrogation of sulfolipids in clinical mycobacterial strains",
         journal: "Tuberculosis",
@@ -356,11 +411,12 @@ export const publications = [
         pages: "306-319",
         month: "",
         doi: "10.1096/fba.2018-00039",
+        image: "/images/publications/pub-26.jpg",
         topics: ["Mycobacteria", "Lipid Metabolism", "Protein Stability"],
         correspondingAuthor: false
     },
     {
-        id: 25,
+        id: 27,
         authors: "Yadav K, Kumar S, Mishra D, Asad M, Mitra M, Yavvari PS, Gupta S, Vedantham M, Ranga P, Komalla V, Pal S, Sharma P, Kapil A, Singh A, Singh N, Srivastava A, Thukral L*, Bajaj A*",
         title: "Deciphering the role of intramolecular networking in cholic acid-peptide conjugates on the lipopolysaccharide surface in combating Gram-negative bacterial infections",
         journal: "Journal of Medicinal Chemistry",
@@ -371,11 +427,12 @@ export const publications = [
         pages: "1875-1886",
         month: "Feb 28",
         doi: "10.1021/acs.jmedchem.8b01357",
+        image: "/images/publications/placeholder.jpg",
         topics: ["Drug Discovery", "Antimicrobial", "Peptide Chemistry"],
         correspondingAuthor: true
     },
     {
-        id: 26,
+        id: 28,
         authors: "Ray A, Ghosh A, Chakraborty R, Upadhyay SK, Maiti S, Sengupta S*, Thukral L*",
         title: "Specific cholesterol binding drives drastic structural alterations in apolipoprotein A1",
         journal: "Journal of Physical Chemistry Letters",
@@ -386,11 +443,12 @@ export const publications = [
         pages: "6060-6065",
         month: "Oct 18",
         doi: "10.1021/acs.jpclett.8b02042",
+        image: "/images/publications/placeholder.jpg",
         topics: ["Cholesterol", "Apolipoprotein", "Protein Structure"],
         correspondingAuthor: true
     },
     {
-        id: 27,
+        id: 29,
         authors: "Ray A, Gräter F*, Thukral L*",
         title: "Probing molecular forces in multi-component physiological membranes",
         journal: "Physical Chemistry Chemical Physics",
@@ -401,11 +459,12 @@ export const publications = [
         pages: "2155-2161",
         month: "Jan 21",
         doi: "10.1039/C7CP05981G",
+        image: "/images/publications/placeholder.jpg",
         topics: ["Membrane Biology", "Molecular Dynamics", "Biophysics"],
         correspondingAuthor: true
     },
     {
-        id: 28,
+        id: 30,
         authors: "Ray A, Jatana N, Thukral L*",
         title: "Lipidated proteins: spotlight on protein-membrane interfaces",
         journal: "Progress in Biophysics and Molecular Biology",
@@ -416,11 +475,12 @@ export const publications = [
         pages: "74-84",
         month: "May",
         doi: "10.1016/j.pbiomolbio.2017.01.002",
+        image: "/images/publications/pub-30.jpg",
         topics: ["Membrane Biology", "Lipidated Proteins", "Review"],
         correspondingAuthor: true
     },
     {
-        id: 29,
+        id: 31,
         authors: "Chua NK, Howe V, Jatana N, Thukral L, Brown AJ",
         title: "A conserved degron containing an amphipathic helix regulates the cholesterol-mediated turnover of human squalene monooxygenase, a rate-limiting enzyme in cholesterol synthesis",
         journal: "Journal of Biological Chemistry",
@@ -431,11 +491,12 @@ export const publications = [
         pages: "5198-5211",
         month: "Mar 31",
         doi: "10.1074/jbc.M117.794230",
+        image: "/images/publications/pub-31.jpg",
         topics: ["Cholesterol", "Protein Turnover", "Degron"],
         correspondingAuthor: false
     },
     {
-        id: 30,
+        id: 32,
         authors: "Singh A, Gotherwal V, Junni P, Vijayan V, Tiwari M, Ganju P, Kumar A, Sharma P, Fatima T, Gupta A, Holla A, Kar HK, Khanna S, Thukral L, Malik G, Natarajan K, Gadgil CJ, Lahesmaa R, Natarajan VT, Rani R, Gokhale RS",
         title: "Mapping architectural and transcriptional alterations in non-lesional and lesional epidermis in vitiligo",
         journal: "Scientific Reports",
@@ -446,11 +507,12 @@ export const publications = [
         pages: "9860",
         month: "Aug 30",
         doi: "10.1038/s41598-017-10253-w",
+        image: "/images/publications/pub-32.jpg",
         topics: ["Dermatology", "Vitiligo", "Transcriptomics"],
         correspondingAuthor: false
     },
     {
-        id: 31,
+        id: 33,
         authors: "Ramkumar A, Murthy D, Raja DA, Singh A, Krishnan A, Khanna S, Vats A, Thukral L, Sharma P, Sivasubbu S, Rani R, Natarajan VT, Gokhale RS",
         title: "Classical autophagy proteins LC3B and ATG4B facilitate melanosome movement on cytoskeletal tracks",
         journal: "Autophagy",
@@ -461,11 +523,12 @@ export const publications = [
         pages: "1331-1347",
         month: "",
         doi: "10.1080/15548627.2017.1327509",
+        image: "/images/publications/pub-33.jpg",
         topics: ["Autophagy", "LC3B", "ATG4B", "Melanosome"],
         correspondingAuthor: false
     },
     {
-        id: 32,
+        id: 34,
         authors: "Daidone I, Zanetti-Polzi L, Thukral L, Alekozai E, Amadei A",
         title: "Theoretical-computational characterization of the temperature-dependent folding thermodynamics of a beta-hairpin peptide",
         journal: "Chemical Physics Letters",
@@ -476,11 +539,12 @@ export const publications = [
         pages: "247-251",
         month: "Aug 30",
         doi: "10.1016/j.cplett.2016.07.041",
+        image: "/images/publications/pub-34.jpg",
         topics: ["Protein Folding", "Beta-Hairpin", "Molecular Dynamics"],
         correspondingAuthor: false
     },
     {
-        id: 33,
+        id: 35,
         authors: "Jatana N, Thukral L*, Latha N*",
         title: "Structural signatures of DRD4 mutants revealed using molecular dynamics simulations: implications for drug targeting",
         journal: "Journal of Molecular Modeling",
@@ -491,11 +555,12 @@ export const publications = [
         pages: "14",
         month: "Jan",
         doi: "10.1007/s00894-015-2868-x",
+        image: "/images/publications/placeholder.jpg",
         topics: ["GPCR", "DRD4", "Molecular Dynamics", "Drug Discovery"],
         correspondingAuthor: true
     },
     {
-        id: 34,
+        id: 36,
         authors: "Nagpal S, Tiwari S, Mapa K*, Thukral L*",
         title: "Decoding structural properties of a partially unfolded protein substrate: en route to chaperone binding",
         journal: "PLoS Computational Biology",
@@ -506,11 +571,12 @@ export const publications = [
         pages: "e1004496",
         month: "Sep",
         doi: "10.1371/journal.pcbi.1004496",
+        image: "/images/publications/pub-36.jpg",
         topics: ["Protein Folding", "Chaperone", "Unfolded Protein"],
         correspondingAuthor: true
     },
     {
-        id: 35,
+        id: 37,
         authors: "Thukral L*, Sengupta D, Ramkumar A, Murthy D, Agrawal N, Gokhale RS*",
         title: "Molecular mechanism underlying recruitment and insertion of lipid-anchored LC3 proteins into membranes",
         journal: "Biophysical Journal",
@@ -521,11 +587,12 @@ export const publications = [
         pages: "2067-2078",
         month: "Nov 17",
         doi: "10.1016/j.bpj.2015.09.022",
+        image: "/images/publications/pub-37.jpg",
         topics: ["Autophagy", "LC3", "Membrane Biology"],
         correspondingAuthor: true
     },
     {
-        id: 36,
+        id: 38,
         authors: "Srivastava S, Chaudhary S, Thukral L, Shi C, Gupta RD, Gupta R, Priyadarshan K, Vats A, Haque AS, Sankaranarayanan R, Natarajan VT, Sharma R, Aldrich CC, Gokhale RS",
         title: "Unsaturated lipid assimilation by Mycobacteria requires auxiliary cis-trans enoyl-CoA isomerase",
         journal: "Journal of Biological Chemistry",
@@ -536,11 +603,12 @@ export const publications = [
         pages: "25160-25172",
         month: "Oct 9",
         doi: "10.1016/j.chembiol.2015.10.009",
+        image: "/images/publications/pub-38.jpg",
         topics: ["Mycobacteria", "Lipid Metabolism", "Enzyme Mechanism"],
         correspondingAuthor: false
     },
     {
-        id: 37,
+        id: 39,
         authors: "Thukral L, Schwarze S, Daidone I, Neuweiler H",
         title: "Beta-structure within the denatured state of the helical protein domain BBL",
         journal: "Journal of Molecular Biology",
@@ -551,11 +619,12 @@ export const publications = [
         pages: "3166-3176",
         month: "Oct 9",
         doi: "10.1016/j.jmb.2015.08.007",
+        image: "/images/publications/pub-39.jpg",
         topics: ["Protein Folding", "Beta-Structure", "Denatured State"],
         correspondingAuthor: false
     },
     {
-        id: 38,
+        id: 40,
         authors: "Silla Y, Ray A, Thukral L, Sengupta S",
         title: "Molecular modeling indicates that homocysteine induces conformational changes in the structure of putative target proteins",
         journal: "Journal of Proteins & Proteomics",
@@ -566,11 +635,12 @@ export const publications = [
         pages: "271-286",
         month: "",
         doi: null,
+        image: "/images/publications/placeholder.jpg",
         topics: ["Molecular Modeling", "Homocysteine", "Conformational Changes"],
         correspondingAuthor: false
     },
     {
-        id: 39,
+        id: 41,
         authors: "Jatana N, Thukral L*, Latha N*",
         title: "Structure and dynamics of DRD4 bound to an agonist and an antagonist using in silico approaches",
         journal: "Proteins: Structure, Function, and Bioinformatics",
@@ -581,11 +651,12 @@ export const publications = [
         pages: "867-880",
         month: "May",
         doi: "10.1002/prot.24716",
+        image: "/images/publications/placeholder.jpg",
         topics: ["GPCR", "DRD4", "Molecular Dynamics"],
         correspondingAuthor: true
     },
     {
-        id: 40,
+        id: 42,
         authors: "Daidone I, Thukral L, Smith JC, Amadei A",
         title: "Monitoring the folding kinetics of a beta-hairpin by time-resolved IR spectroscopy in silico",
         journal: "Journal of Physical Chemistry B",
@@ -596,11 +667,12 @@ export const publications = [
         pages: "4849-4856",
         month: "Apr 9",
         doi: "10.1021/acs.jpcb.5b01477",
+        image: "/images/publications/placeholder.jpg",
         topics: ["Protein Folding", "IR Spectroscopy", "Beta-Hairpin"],
         correspondingAuthor: false
     },
     {
-        id: 41,
+        id: 43,
         authors: "Thukral L, Daidone I, Smith JC",
         title: "Structured pathway across the transition state for peptide folding revealed by molecular dynamics simulations",
         journal: "PLoS Computational Biology",
@@ -611,11 +683,12 @@ export const publications = [
         pages: "e1002137",
         month: "Sep",
         doi: "10.1371/journal.pcbi.1002137",
+        image: "/images/publications/pub-43.jpg",
         topics: ["Protein Folding", "Molecular Dynamics", "Transition State"],
         correspondingAuthor: false
     },
     {
-        id: 42,
+        id: 44,
         authors: "Thukral L, Shenoy SR, Bhushan K, Jayaram B",
         title: "Common folding mechanism of a β-hairpin peptide via non-native turn formation revealed by unbiased molecular dynamics simulations",
         journal: "Journal of the American Chemical Society",
@@ -626,11 +699,12 @@ export const publications = [
         pages: "18147-18152",
         month: "Dec 23",
         doi: "10.1021/ja9064365",
+        image: "/images/publications/placeholder.jpg",
         topics: ["Protein Folding", "Beta-Hairpin", "Molecular Dynamics"],
         correspondingAuthor: false
     },
     {
-        id: 43,
+        id: 45,
         authors: "Thukral L, Shenoy SR, Bhushan K, Jayaram B",
         title: "ProRegIn: a regularity index for the selection of native-like tertiary structures of proteins",
         journal: "Journal of Biosciences",
@@ -641,6 +715,7 @@ export const publications = [
         pages: "71-81",
         month: "Mar",
         doi: "10.1007/s12038-007-0007-2",
+        image: "/images/publications/placeholder.jpg",
         topics: ["Protein Structure", "Structure Prediction", "Bioinformatics"],
         correspondingAuthor: false
     }
@@ -659,4 +734,4 @@ export const allTopics = [
     "Mycobacteria"
 ];
 
-export const allYears = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2011, 2009, 2007];
+export const allYears = [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2011, 2009, 2007];

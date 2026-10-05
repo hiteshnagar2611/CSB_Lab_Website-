@@ -23,13 +23,15 @@ const News = () => {
                                 className="rounded-[32px] border border-slate-200 bg-white p-6 sm:p-8 shadow-sm flex flex-col md:flex-row gap-8 items-center"
                             >
                                 {/* Image Section */}
-                                <div className="w-full md:w-1/3 rounded-2xl overflow-hidden flex-shrink-0 bg-slate-50">
-                                    <img 
-                                        src={url(news.image)} 
-                                        alt={news.title} 
-                                        className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
-                                    />
-                                </div>
+                                {news.image && (
+                                    <div className="w-full md:w-1/3 rounded-2xl overflow-hidden flex-shrink-0 bg-slate-50">
+                                        <img
+                                            src={url(news.image)}
+                                            alt={news.title}
+                                            className="w-full h-auto object-cover transition-transform duration-500 hover:scale-105"
+                                        />
+                                    </div>
+                                )}
 
                                 {/* Content Section */}
                                 <div className="flex-grow w-full">

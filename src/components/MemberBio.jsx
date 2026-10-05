@@ -81,6 +81,16 @@ Research interests:
 
 She is passionate about applying computational methods to solve real-world biological problems.`
         },
+        'dr-anustup-chakraborty': {
+            name: 'Dr. Anustup Chakraborty',
+            image: url('/images/team/anustup.jpeg'),
+            bio: `Dr. Anustup Chakraborty is a postdoctoral researcher at the Computational Structural Biology Lab, CSIR-Institute of Genomics and Integrative Biology, New Delhi.`
+        },
+        'asita-singh': {
+            name: 'Asita Singh',
+            image: url('/images/team/asita.jpeg'),
+            bio: `Asita Singh is a Project Associate at the Computational Structural Biology Lab, CSIR-Institute of Genomics and Integrative Biology, New Delhi.`
+        },
         'dr-shailya-verma': {
             name: 'Dr. Shailya Verma',
             image: url('/images/team/shailyadi.JPG'),

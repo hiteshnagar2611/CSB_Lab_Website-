@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronRight, Users, BookOpen, Calendar, GraduationCap, ArrowRight, Mail } from 'lucide-react';
+import { ChevronRight, Users, BookOpen, Calendar, GraduationCap, ArrowRight, Mail, Award } from 'lucide-react';
 
 const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, '')}`;
 
@@ -111,34 +111,29 @@ const Team = () => {
             name: 'Dr. Lipi Thukral',
             img: url('/images/team/LipiT.jpg'),
             role: 'Principal Investigator',
-            topics: ['Computational Biology', 'Structural Biology'],
         }
     ];
 
     const postdocs = [
         {
-            name: 'Dr. Deepanshi Gahlot',
-            img: url('/images/team/deepanshi.JPG'),
-            role: 'Postdoctoral Researcher',
-            topics: ['Molecular Dynamics', 'Protein Structure'],
-        },
-        {
             name: 'Dr. Shailya Verma',
             img: url('/images/team/shailyadi.JPG'),
             role: 'Postdoctoral Researcher',
-            topics: ['SARS-CoV-2', 'Genomics'],
         },
         {
             name: 'Dr. Shruti Mathur',
             img: url('/images/team/shruti.jpeg'),
             role: 'Postdoctoral Researcher',
-            topics: ['Drug Discovery', 'Bioinformatics'],
         },
         {
             name: 'Dr. Tanushree Das',
             img: url('/images/team/tanushree.JPG'),
             role: 'Postdoctoral Researcher',
-            topics: ['NOTCH', 'Molecular Dynamics'],
+        },
+        {
+            name: 'Dr. Anustup Chakraborty',
+            img: url('/images/team/anustup.jpeg'),
+            role: 'Postdoctoral Researcher',
         }
     ];
 
@@ -147,37 +142,21 @@ const Team = () => {
             name: 'Akanksha Kaushik',
             img: url('/images/team/akankshak.jpg'),
             role: 'PhD Student',
-            topics: ['Autophagy', 'Protein Structure'],
         },
         {
             name: 'Aayushi Singh',
             img: url('/images/team/aayushis.jpg'),
             role: 'PhD Student',
-            topics: ['SARS-CoV-2', 'Genomics'],
-        },
-        {
-            name: 'Akanksha Arun',
-            img: url('/images/team/akankshadi.JPG'),
-            role: 'PhD Student',
-            topics: ['Autophagy', 'AI/ML'],
-        },
-        {
-            name: 'Debendra Kumar Swain',
-            img: url('/images/team/debe.jpg'),
-            role: 'PhD Student',
-            topics: ['Molecular Dynamics', 'Protein Folding'],
         },
         {
             name: 'Jesu Castin',
             img: url('/images/team/jesu.JPG'),
             role: 'PhD Student',
-            topics: ['Autophagy', 'Structural Biology'],
         },
         {
             name: 'Anamika Singh',
             img: url('/images/team/anamika.jpg'),
             role: 'PhD Student',
-            topics: ['Autophagy', 'Cancer Biology'],
         }
     ];
 
@@ -186,36 +165,42 @@ const Team = () => {
             name: 'Hitesh Nagar',
             img: url('/images/team/hitesh.jpg'),
             role: 'Project Associate',
-            topics: ['AI/ML', 'Protein Language Models'],
         },
         {
             name: 'Prathamdeep Dhanoa',
             img: url('/images/team/pratham.jpg'),
             role: 'Project Associate',
-            topics: ['Bioinformatics', 'Genomics'],
+        },
+        {
+            name: 'Asita Singh',
+            img: url('/images/team/asita.jpeg'),
+            role: 'Project Associate',
         }
     ];
 
-    const interns = [
-        {
-            name: 'Nabajit',
-            img: url('/images/team/nabojit.png'),
-            role: 'Research Intern',
-            topics: ['Computational Biology'],
-        },
-        {
-            name: 'Varrunavi',
-            img: url('/images/team/varrunavi.jpg'),
-            role: 'Research Intern',
-            topics: ['Structural Biology'],
-        }
+    const alumniPostdocs = [
+        { name: 'Kriti Kashyap', role: 'Post Doctoral Fellow', current: 'Presently @ Delhi University' },
+        { name: 'Nidhi Katyal', role: 'Post Doctoral Fellow', img: url('/images/team/nidhi-katyal.jpg'), current: 'Presently @ Shiv Nadar University' },
+        { name: 'Nidhi Batra', role: 'Post Doctoral Fellow', img: url('/images/team/nidhi-batra.jpg'), current: 'Presently @ Jaypee University' },
+        { name: 'Neha', role: 'Post Doctoral Fellow', img: url('/images/team/neha.jpg'), current: 'Presently Scientist at CSIR-Fourth Paradigm Institute' },
     ];
 
     const alumniPhd = [
-        { name: 'Arjun Ray', role: 'PhD Student', current: 'IIIT Delhi, Assistant Professor' },
+        { name: 'Akanksha Arun', role: 'PhD Student', img: url('/images/team/akankshadi.JPG') },
+        {
+            name: 'Dr. Deepanshi Gahlot',
+            role: 'PhD Student',
+            img: url('/images/team/deepanshi.JPG'),
+            current: 'Currently PostDoc at University of California, Los Angeles',
+        },
+        { name: 'Saman Fatihi', role: 'PhD Student' },
+        { name: 'Shantanu Khatri', role: 'PhD Student', img: url('/images/team/shantanu-khatri.jpg') },
+        { name: 'Surabhi Rathore', role: 'PhD Student' },
+        { name: 'Arjun Ray', role: 'PhD Student', img: url('/images/team/arjun-ray.jpg'), current: 'IIIT Delhi, Assistant Professor' },
     ];
 
     const alumniFellows = [
+        { name: 'Dr Mohammad Asad', role: 'Project Fellow', img: url('/images/team/mohammad-asad.jpg'), current: 'Presently @ University of Nantes' },
         { name: 'Prithvi Singh', role: 'Project Fellow', current: 'Bioinformatics Industry' },
         { name: 'Nikhil Agarwal', role: 'Project Fellow', current: 'Institute of Molecular Biology, Poland' },
         { name: 'Suhani Nagpal', role: 'Project Fellow', current: 'University of California Merced, USA' },
@@ -224,27 +209,43 @@ const Team = () => {
     ];
 
     const alumniTrainees = [
-        { name: 'Rajshri Iyer', role: 'Summer Intern (2014)', current: 'Anna University' },
-        { name: 'Sunitha Subhramanian', role: 'Summer Intern (2014)', current: 'Amrita School of Biotechnology' },
-        { name: 'Namita Singh', role: 'M.Tech Thesis (2014-15)', current: 'Banasthali Vidyapith' },
-        { name: 'Chandel Angad', role: 'Summer Intern (2015)', current: 'IIT Delhi' },
-        { name: 'Richa Tripathi', role: 'M.Tech Thesis (2015-16)', current: 'Banasthali Vidyapith' },
-        { name: 'Dharm Skandh Jain', role: 'Summer Intern (2016)', current: 'BITS Pilani' },
-        { name: 'Mugdha Dhurandhar', role: 'Summer Intern (2016)', current: 'University of Mumbai' },
-        { name: 'Vaishali Gupta', role: 'Summer Intern (2016)', current: 'NISER Bhubaneswar' },
-        { name: 'Kritika Rajain', role: 'M.Tech Thesis (2016-17)', current: 'Banasthali Vidyapith' },
-        { name: 'Jayant Darokar', role: 'Winter Intern (2016)', current: 'IIT Delhi' },
-        { name: 'Kriti Karn', role: 'Summer Intern (2017)', current: 'Amity University' },
-        { name: 'Joel John', role: 'Winter Intern (2017)', current: 'Manipal Institute of Technology' },
-        { name: 'Ashar Ahmad', role: 'Winter Intern (2017)', current: 'IIT Kanpur' },
+        {
+            name: 'Nabajit',
+            role: 'M.Tech Thesis (2026)',
+            img: url('/images/team/nabojit.png'),
+            current: 'Currently Founding Computational Biologist at LiteFold',
+        },
+        {
+            name: 'Varrunavi',
+            role: 'B.Tech Thesis (2026)',
+            img: url('/images/team/varrunavi.jpg'),
+            current: 'Currently Masters Student at KTH Stockholm',
+        },
+        { name: 'Ritushree Ramakrishnan', role: 'Summer Intern (2024)', current: 'Amity University' },
+        { name: 'Vignesh Nandgopal', role: 'Summer Intern (2024)', current: 'Anna University' },
+        { name: 'Musharraf Parvez', role: 'Summer Intern (2024)', current: 'Jamia Milia Islamia' },
+        { name: 'Archana Karki', role: 'M.Tech Thesis (2024)', current: 'NSIT' },
         { name: 'Saman Fatihi', role: 'Master Thesis (2018)', current: 'Jamia Milia Islamia' },
         { name: 'Afreen Khan', role: 'Master Thesis (2018)', current: 'Jamia Milia Islamia' },
         { name: 'Sanchita Jain', role: 'Master Thesis (2018)', current: 'Jamia Milia Islamia' },
         { name: 'Kiran Mahto', role: 'Summer Intern (2018)', current: 'University of Pune' },
         { name: 'Aditi Sadhu', role: 'Summer Intern (2018)', current: 'IIT Madras' },
         { name: 'Rohit Satyam', role: 'Summer Intern (2018)', current: 'NIET' },
-        { name: 'Arvind Iyer', role: 'M.Tech Thesis (2017-18)', current: 'IIIT Delhi' },
         { name: 'Waali Aafaq', role: 'Master Thesis (2018)', current: 'Manav Rachna Institute' },
+        { name: 'Arvind Iyer', role: 'M.Tech Thesis (2017-18)', current: 'IIIT Delhi' },
+        { name: 'Kriti Karn', role: 'Summer Intern (2017)', current: 'Amity University' },
+        { name: 'Joel John', role: 'Winter Intern (2017)', current: 'Manipal Institute of Technology' },
+        { name: 'Ashar Ahmad', role: 'Winter Intern (2017)', current: 'IIT Kanpur' },
+        { name: 'Kritika Rajain', role: 'M.Tech Thesis (2016-17)', current: 'Banasthali Vidyapith' },
+        { name: 'Dharm Skandh Jain', role: 'Summer Intern (2016)', current: 'BITS Pilani' },
+        { name: 'Mugdha Dhurandhar', role: 'Summer Intern (2016)', current: 'University of Mumbai' },
+        { name: 'Vaishali Gupta', role: 'Summer Intern (2016)', current: 'NISER Bhubaneswar' },
+        { name: 'Jayant Darokar', role: 'Winter Intern (2016)', current: 'IIT Delhi' },
+        { name: 'Richa Tripathi', role: 'M.Tech Thesis (2015-16)', current: 'Banasthali Vidyapith' },
+        { name: 'Chandel Angad', role: 'Summer Intern (2015)', current: 'IIT Delhi' },
+        { name: 'Namita Singh', role: 'M.Tech Thesis (2014-15)', current: 'Banasthali Vidyapith' },
+        { name: 'Rajshri Iyer', role: 'Summer Intern (2014)', current: 'Anna University' },
+        { name: 'Sunitha Subhramanian', role: 'Summer Intern (2014)', current: 'Amrita School of Biotechnology' },
     ];
 
     const stats = [
@@ -355,9 +356,11 @@ const Team = () => {
             <section className="py-12 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center mb-10 text-slate-900">PhD Students</h2>
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="flex flex-wrap justify-center gap-6">
                         {phdStudents.map((member, index) => (
-                            <MemberCard key={index} member={member} />
+                            <div key={index} className="w-56">
+                                <MemberCard member={member} />
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -367,21 +370,11 @@ const Team = () => {
             <section className="py-12 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center mb-10 text-slate-900">Project Associates</h2>
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-3xl mx-auto">
+                    <div className="flex flex-wrap justify-center gap-6">
                         {projectAssociates.map((member, index) => (
-                            <MemberCard key={index} member={member} />
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Interns */}
-            <section className="py-12 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-10 text-slate-900">Research Interns</h2>
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-2xl mx-auto">
-                        {interns.map((member, index) => (
-                            <MemberCard key={index} member={member} />
+                            <div key={index} className="w-56">
+                                <MemberCard member={member} />
+                            </div>
                         ))}
                     </div>
                 </div>
@@ -425,6 +418,19 @@ const Team = () => {
                     <p className="text-center text-slate-500 mb-12 max-w-2xl mx-auto">
                         Our former members who have gone on to make their mark in academia and industry worldwide.
                     </p>
+
+                    {/* Post Doctoral Fellows */}
+                    <div className="mb-12">
+                        <h3 className="text-xl font-semibold text-slate-800 mb-5 flex items-center gap-2">
+                            <Award className="h-5 w-5 text-blue-600" />
+                            Post Doctoral Fellows
+                        </h3>
+                        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            {alumniPostdocs.map((member, index) => (
+                                <AlumniCard key={index} member={member} />
+                            ))}
+                        </div>
+                    </div>
 
                     {/* Past PhD Students */}
                     <div className="mb-12">

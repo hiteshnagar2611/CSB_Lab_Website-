@@ -1,11 +1,12 @@
 import React, { useState, useMemo } from 'react';
 import { ExternalLink, Search, ChevronDown, ChevronUp, BookOpen, Filter } from 'lucide-react';
-import { publications, allTopics, allYears } from '../data/publicationsData';
+import { publications, allYears } from '../data/publicationsData';
+
+const assetUrl = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, '')}`;
 
 const Publications = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedYear, setSelectedYear] = useState(null);
-    const [selectedTopics, setSelectedTopics] = useState([]);
     const [expandedId, setExpandedId] = useState(null);
     const [showFilters, setShowFilters] = useState(true);
 
@@ -20,44 +21,17 @@ const Publications = () => {
 
             const matchesYear = selectedYear === null || pub.year === selectedYear;
 
-            const matchesTopics =
-                selectedTopics.length === 0 ||
-                selectedTopics.some((topic) => pub.topics.includes(topic));
-
-            return matchesSearch && matchesYear && matchesTopics;
+            return matchesSearch && matchesYear;
         });
-    }, [searchQuery, selectedYear, selectedTopics]);
-
-    const toggleTopic = (topic) => {
-        setSelectedTopics((prev) =>
-            prev.includes(topic) ? prev.filter((t) => t !== topic) : [...prev, topic]
-        );
-    };
+    }, [searchQuery, selectedYear]);
 
     const clearFilters = () => {
         setSearchQuery('');
         setSelectedYear(null);
-        setSelectedTopics([]);
     };
 
     const toggleExpand = (id) => {
         setExpandedId((prev) => (prev === id ? null : id));
-    };
-
-    const getTopicColor = (topic) => {
-        const colors = {
-            'SARS-CoV-2': 'bg-red-100 text-red-800 border-red-200',
-            'Autophagy': 'bg-purple-100 text-purple-800 border-purple-200',
-            'Molecular Dynamics': 'bg-blue-100 text-blue-800 border-blue-200',
-            'Protein Folding': 'bg-amber-100 text-amber-800 border-amber-200',
-            'Membrane Biology': 'bg-teal-100 text-teal-800 border-teal-200',
-            'AI/ML': 'bg-indigo-100 text-indigo-800 border-indigo-200',
-            'Drug Discovery': 'bg-green-100 text-green-800 border-green-200',
-            'Protein Structure': 'bg-cyan-100 text-cyan-800 border-cyan-200',
-            'Genomics': 'bg-orange-100 text-orange-800 border-orange-200',
-            'Mycobacteria': 'bg-rose-100 text-rose-800 border-rose-200',
-        };
-        return colors[topic] || 'bg-slate-100 text-slate-800 border-slate-200';
     };
 
     const formatAuthors = (authors, maxDisplay = 3) => {
@@ -70,7 +44,7 @@ const Publications = () => {
         return `${displayed} ... (+${remaining} authors)`;
     };
 
-    const hasActiveFilters = searchQuery || selectedYear || selectedTopics.length > 0;
+    const hasActiveFilters = searchQuery || selectedYear;
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white pt-24">
@@ -81,28 +55,6 @@ const Publications = () => {
                         <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 tracking-tight">
                             Publications
                         </h1>
-                        <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
-                            {publications.length} research publications from the Computational Structural Biology Lab
-                        </p>
-                        <div className="mt-6 flex items-center justify-center gap-8 text-sm text-slate-500">
-                            <div className="flex items-center gap-2">
-                                <BookOpen className="h-4 w-4" />
-                                <span>{publications.length} Total</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <span className="font-semibold text-blue-600">
-                                    {publications.filter((p) => p.correspondingAuthor).length}
-                                </span>
-                                <span>Corresponding Author</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <span className="font-semibold text-emerald-600">
-                                    {publications.filter((p) => p.doi).length}
-                                </span>
-                                <span>With DOI</span>
-                            </div>
-                        </div>
-                        <p className="mt-3 text-sm text-slate-500">* corresponding author</p>
                     </div>
 
                     {/* Search and Filter Toggle */}
@@ -144,7 +96,7 @@ const Publications = () => {
                     {showFilters && (
                         <div className="mb-8 max-w-4xl mx-auto bg-white rounded-2xl border border-slate-200 p-6 shadow-sm">
                             {/* Year Chips */}
-                            <div className="mb-5">
+                            <div>
                                 <h3 className="text-sm font-semibold text-slate-700 mb-3 uppercase tracking-wider">
                                     Filter by Year
                                 </h3>
@@ -170,28 +122,6 @@ const Publications = () => {
                                             }`}
                                         >
                                             {year}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
-
-                            {/* Topic Tags */}
-                            <div>
-                                <h3 className="text-sm font-semibold text-slate-700 mb-3 uppercase tracking-wider">
-                                    Filter by Topic
-                                </h3>
-                                <div className="flex flex-wrap gap-2">
-                                    {allTopics.map((topic) => (
-                                        <button
-                                            key={topic}
-                                            onClick={() => toggleTopic(topic)}
-                                            className={`px-3 py-1.5 rounded-lg text-sm font-medium border transition ${
-                                                selectedTopics.includes(topic)
-                                                    ? 'bg-blue-600 text-white border-blue-600 shadow-sm'
-                                                    : `${getTopicColor(topic)} hover:opacity-80`
-                                            }`}
-                                        >
-                                            {topic}
                                         </button>
                                     ))}
                                 </div>
@@ -234,17 +164,20 @@ const Publications = () => {
                                         onClick={() => toggleExpand(pub.id)}
                                     >
                                         <div className="flex items-start justify-between gap-4">
+                                            {pub.image && (
+                                                <img
+                                                    src={assetUrl(pub.image)}
+                                                    alt=""
+                                                    loading="lazy"
+                                                    className="w-24 sm:w-32 lg:w-40 h-20 sm:h-24 lg:h-28 flex-shrink-0 object-contain bg-slate-50 border border-slate-200 rounded-xl p-1"
+                                                />
+                                            )}
                                             <div className="flex-1 min-w-0">
                                                 {/* Year Badge */}
                                                 <div className="flex items-center gap-2 mb-2">
                                                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-bold bg-slate-900 text-white">
                                                         {pub.year}
                                                     </span>
-                                                    {pub.correspondingAuthor && (
-                                                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-amber-100 text-amber-800 border border-amber-200">
-                                                            Corresponding Author
-                                                        </span>
-                                                    )}
                                                 </div>
 
                                                 {/* Title */}
@@ -265,23 +198,6 @@ const Publications = () => {
                                                     {pub.pages && `: ${pub.pages}`}
                                                     {pub.month && ` (${pub.month})`}
                                                 </p>
-
-                                                {/* Topic Tags */}
-                                                <div className="flex flex-wrap gap-1.5 mt-3">
-                                                    {pub.topics.slice(0, expandedId === pub.id ? pub.topics.length : 3).map((topic) => (
-                                                        <span
-                                                            key={topic}
-                                                            className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border ${getTopicColor(topic)}`}
-                                                        >
-                                                            {topic}
-                                                        </span>
-                                                    ))}
-                                                    {expandedId !== pub.id && pub.topics.length > 3 && (
-                                                        <span className="text-xs text-slate-400">
-                                                            +{pub.topics.length - 3} more
-                                                        </span>
-                                                    )}
-                                                </div>
                                             </div>
 
                                             {/* Expand/DOI */}
@@ -313,51 +229,12 @@ const Publications = () => {
                                     {expandedId === pub.id && (
                                         <div className="px-5 sm:px-6 pb-5 sm:pb-6 border-t border-slate-100">
                                             <div className="pt-4 space-y-3">
-                                                <div>
-                                                    <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">
-                                                        Full Author List
-                                                    </h4>
-                                                    <p className="text-sm text-slate-700 leading-relaxed">
-                                                        {pub.authors}
-                                                    </p>
-                                                </div>
-                                                <div>
-                                                    <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">
-                                                        Citation
-                                                    </h4>
-                                                    <p className="text-sm text-slate-700 leading-relaxed">
-                                                        {pub.authors.split(', ').slice(0, 3).join(', ')}
-                                                        {pub.authors.split(', ').length > 3 ? ' ...' : '.'}{' '}
-                                                        <span className="font-semibold">{pub.title}</span>{' '}
-                                                        <span className="italic">{pub.journalAbbrev}</span>
-                                                        {pub.volume && ` ${pub.volume}`}
-                                                        {pub.issue && `(${pub.issue})`}
-                                                        {pub.pages && `: ${pub.pages}`}
-                                                        {pub.year && ` (${pub.year})`}
-                                                        {pub.doi && ` doi: ${pub.doi}`}
-                                                    </p>
-                                                </div>
-                                                <div>
-                                                    <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">
-                                                        Topics
-                                                    </h4>
-                                                    <div className="flex flex-wrap gap-1.5">
-                                                        {pub.topics.map((topic) => (
-                                                            <span
-                                                                key={topic}
-                                                                className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border ${getTopicColor(topic)}`}
-                                                            >
-                                                                {topic}
-                                                            </span>
-                                                        ))}
-                                                    </div>
-                                                </div>
                                                 {pub.doi && (
                                                     <a
                                                         href={`https://doi.org/${pub.doi}`}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition mt-2"
+                                                        className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition"
                                                     >
                                                         Read Paper
                                                         <ExternalLink className="h-4 w-4" />
