@@ -70,7 +70,7 @@ Dr. Thukral's research focuses on understanding how biomolecular interactions at
         'dr-deepanshi-gahlot': {
             name: 'Dr. Deepanshi Gahlot',
             image: url('/images/team/deepanshi.JPG'),
-            bio: `Dr. Deepanshi is a postdoctoral researcher specializing in computational protein design and molecular modeling. Her work focuses on developing novel algorithms for protein structure prediction and understanding protein-ligand interactions.
+            bio: `Dr. Deepanshi is a postdoctoral researcher at the David Geffen School of Medicine at UCLA, specializing in computational protein design and molecular modeling. Her work focuses on developing novel algorithms for protein structure prediction and understanding protein-ligand interactions.
 
 Research interests:
 • Protein structure prediction
@@ -159,7 +159,7 @@ Her research aims to understand how proteins interact with DNA to regulate gene 
         'akanksha-arun': {
             name: 'Akanksha Arun',
             image: url('/images/team/akankshadi.JPG'),
-            bio: `Akanksha is a PhD student working on computational immunology and antibody design. Her research focuses on developing algorithms for therapeutic antibody development.
+            bio: `Akanksha was a PhD student working on computational immunology and antibody design, and is now a Scientist at Sirpi Data Science. Her research focuses on developing algorithms for therapeutic antibody development.
 
 Current projects:
 • Antibody-antigen interaction modeling

@@ -1,5 +1,12 @@
 export const newsItems = [
     {
+        date: "October 1, 2026",
+        title: "Our research featured in Hindustan Times",
+        content: "Our Nature Communications study on programmable autophagy was covered by Hindustan Times (PTI), highlighting how engineered LC3 proteins could help study cell cleansing in cancer and Parkinson's disease.",
+        link: "https://www.hindustantimes.com/india-news/manipulation-of-cell-cleansing-could-help-study-its-role-in-cancer-neurodegenerative-diseases-study-101790845602144-amp.html",
+        image: "/images/publications/pub-2.jpg"
+    },
+    {
         date: "September 25, 2026",
         title: "\"LC3 forms functional nanoclusters on autophagosomes\" featured in EMBO Reports",
         content: "Our paper on how LC3 forms functional nanoclusters on autophagosomes is featured in EMBO Reports.",

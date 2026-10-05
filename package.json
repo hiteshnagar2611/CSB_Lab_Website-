@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:pages": "vite build --base=/CSB_Lab_Website-/",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build:pages",
+    "deploy": "gh-pages -d dist --repo https://github.com/hiteshnagar2611/CSB_Lab_Website-.git",
     "lint": "eslint ."
   },
   "dependencies": {

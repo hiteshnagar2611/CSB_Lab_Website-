@@ -8,7 +8,7 @@ const AkankshaArun = () => {
     const member = {
         name: 'Akanksha Arun',
         image: url('/images/team/akankshadi.JPG'),
-        bio: `Akanksha is a PhD student working on computational immunology and antibody design. Her research focuses on developing algorithms for therapeutic antibody development.
+        bio: `Akanksha was a PhD student working on computational immunology and antibody design, and is now a Scientist at Sirpi Data Science. Her research focuses on developing algorithms for therapeutic antibody development.
 
 Current projects:
 • Antibody-antigen interaction modeling

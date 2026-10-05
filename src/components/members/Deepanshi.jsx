@@ -8,7 +8,7 @@ const Deepanshi = () => {
     const member = {
         name: 'Dr. Deepanshi Gahlot',
         image: url('/images/team/deepanshi.JPG'),
-        bio: `Dr. Deepanshi is a postdoctoral researcher specializing in computational protein design and molecular modeling. Her work focuses on developing novel algorithms for protein structure prediction and understanding protein-ligand interactions.
+        bio: `Dr. Deepanshi is a postdoctoral researcher at the David Geffen School of Medicine at UCLA, specializing in computational protein design and molecular modeling. Her work focuses on developing novel algorithms for protein structure prediction and understanding protein-ligand interactions.
 
 Research interests:
 • Protein structure prediction

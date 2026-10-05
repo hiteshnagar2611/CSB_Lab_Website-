@@ -186,16 +186,16 @@ const Team = () => {
     ];
 
     const alumniPhd = [
-        { name: 'Akanksha Arun', role: 'PhD Student', img: url('/images/team/akankshadi.JPG') },
+        { name: 'Dr. Akanksha Arun', role: 'PhD Student', img: url('/images/team/akankshadi.JPG'), current: 'Scientist, Sirpi Data Science' },
         {
             name: 'Dr. Deepanshi Gahlot',
             role: 'PhD Student',
             img: url('/images/team/deepanshi.JPG'),
-            current: 'Currently PostDoc at University of California, Los Angeles',
+            current: 'Postdoctoral researcher, David Geffen School of Medicine at UCLA',
         },
-        { name: 'Saman Fatihi', role: 'PhD Student' },
-        { name: 'Shantanu Khatri', role: 'PhD Student', img: url('/images/team/shantanu-khatri.jpg') },
-        { name: 'Surabhi Rathore', role: 'PhD Student' },
+        { name: 'Dr. Saman Fatihi', role: 'PhD Student', current: 'Postdoctoral researcher, Biomedical Research Foundation of the Academy of Athens' },
+        { name: 'Dr. Shantanu Khatri', role: 'PhD Student', img: url('/images/team/shantanu-khatri.jpg'), current: 'Postdoctoral researcher, Utrecht University' },
+        { name: 'Dr. Surabhi Rathore', role: 'PhD Student', current: 'Member of Technical Staff, Mandrake Bio' },
         { name: 'Arjun Ray', role: 'PhD Student', img: url('/images/team/arjun-ray.jpg'), current: 'IIIT Delhi, Assistant Professor' },
     ];
 
