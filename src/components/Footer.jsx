@@ -67,7 +67,7 @@ const Footer = () => {
                                     href="mailto:lipi.thukral@igib.in"
                                     className="text-sm text-slate-600 hover:text-blue-600 transition-colors"
                                 >
-                                    lipi.thukral@igib.in
+                                    lipi[dot]thukral[at]igib[dot]in
                                 </a>
                             </div>
                         </div>

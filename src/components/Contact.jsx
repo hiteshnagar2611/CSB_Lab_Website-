@@ -31,7 +31,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                                        <a href="mailto:lipi.thukral@igib.in" className="text-blue-600 hover:underline">lipi.thukral@igib.in</a>
+                                        <a href="mailto:lipi.thukral@igib.in" className="text-blue-600 hover:underline">lipi[dot]thukral[at]igib[dot]in</a>
                                     </div>
                                 </div>
                                 <div className="flex items-start space-x-4">
