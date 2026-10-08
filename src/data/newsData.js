@@ -19,12 +19,5 @@ export const newsItems = [
         content: "Excited to share that our paper is now out in Nature Communications. We engineered a previously unrecognised binding interface in LC3 to selectively alter autophagy receptor recognition.",
         link: "https://www.nature.com/articles/s41467-026-76697-9",
         image: "/images/publications/pub-2.jpg"
-    },
-    {
-        date: "May 6, 2026",
-        title: "Dr. Anand from IISc visited Thukral Lab",
-        content: "We recently had the pleasure of hosting Dr. Anand from the Indian Institute of Science (IISc). It was a wonderful session discussing ongoing research and fostering future collaborations.",
-        link: null,
-        image: "/images/News/N1.jpg"
     }
 ];
