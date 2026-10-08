@@ -39,15 +39,28 @@ const Footer = () => {
                                 { name: 'Publications', path: '/publications' },
                                 { name: 'Team', path: '/team' },
                                 { name: 'Contact', path: '/contact' },
-                            ].map((link) => (
-                                <Link
-                                    key={link.path}
-                                    to={link.path}
-                                    className="block text-sm text-slate-600 hover:text-blue-600 transition-colors"
-                                >
-                                    {link.name}
-                                </Link>
-                            ))}
+                                { name: 'CSIR-IGIB', path: 'https://www.igib.res.in' },
+                            ].map((link) =>
+                                link.path.startsWith('http') ? (
+                                    <a
+                                        key={link.path}
+                                        href={link.path}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="block text-sm text-slate-600 hover:text-blue-600 transition-colors"
+                                    >
+                                        {link.name}
+                                    </a>
+                                ) : (
+                                    <Link
+                                        key={link.path}
+                                        to={link.path}
+                                        className="block text-sm text-slate-600 hover:text-blue-600 transition-colors"
+                                    >
+                                        {link.name}
+                                    </Link>
+                                )
+                            )}
                         </div>
                     </div>
 
