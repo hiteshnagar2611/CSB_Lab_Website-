@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronRight, Users, BookOpen, Calendar, GraduationCap, ArrowRight, Mail, Award } from 'lucide-react';
+import { ChevronRight, Users, BookOpen, GraduationCap, ArrowRight, Mail, Award } from 'lucide-react';
 
 const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, '')}`;
 
@@ -248,13 +248,6 @@ const Team = () => {
         { name: 'Sunitha Subhramanian', role: 'Summer Intern (2014)', current: 'Amrita School of Biotechnology' },
     ];
 
-    const stats = [
-        { label: 'Lab Members', value: '15+', icon: Users },
-        { label: 'Publications', value: '43', icon: BookOpen },
-        { label: 'Years Active', value: '10+', icon: Calendar },
-        { label: 'Alumni', value: '25+', icon: GraduationCap },
-    ];
-
     return (
         <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
             {/* Hero Section */}
@@ -265,25 +258,6 @@ const Team = () => {
                     <p className="mt-4 text-lg text-white/90 max-w-2xl mx-auto">
                         The people behind the Thukral Lab
                     </p>
-                </div>
-            </section>
-
-            {/* Stats Bar */}
-            <section className="py-8 bg-white border-b border-slate-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                        {stats.map((stat) => (
-                            <div key={stat.label} className="flex items-center justify-center gap-3">
-                                <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center">
-                                    <stat.icon className="h-6 w-6 text-blue-600" />
-                                </div>
-                                <div>
-                                    <p className="text-2xl font-bold text-slate-900">{stat.value}</p>
-                                    <p className="text-sm text-slate-500">{stat.label}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
                 </div>
             </section>
 
