@@ -198,13 +198,11 @@ const Team = () => {
             name: 'Nabajit',
             role: 'M.Tech Thesis (2026)',
             img: url('/images/team/nabojit.png'),
-            current: 'Currently Founding Computational Biologist at LiteFold',
         },
         {
             name: 'Varrunavi',
             role: 'B.Tech Thesis (2026)',
             img: url('/images/team/varrunavi.jpg'),
-            current: 'Currently Masters Student at KTH Stockholm',
         },
         { name: 'Ritushree Ramakrishnan', role: 'Summer Intern (2024)' },
         { name: 'Vignesh Nandgopal', role: 'Summer Intern (2024)' },
