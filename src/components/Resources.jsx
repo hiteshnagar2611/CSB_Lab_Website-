@@ -32,9 +32,6 @@ const Resources = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-14 text-center">
                         <h1 className="text-4xl sm:text-5xl font-bold text-slate-900">Resources</h1>
-                        <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
-                            Discover key tools, databases, and software from the lab that support membrane protein analysis and structural biology research.
-                        </p>
                     </div>
 
                     <div className="space-y-8">
