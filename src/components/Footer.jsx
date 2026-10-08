@@ -15,10 +15,10 @@ const Footer = () => {
                     <div>
                         <Link to="/" className="inline-flex items-center gap-2 mb-4">
                             <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center">
-                                <span className="text-white font-bold text-lg">CSB</span>
+                                <span className="text-white font-bold text-lg">TL</span>
                             </div>
                             <div>
-                                <span className="text-lg font-bold text-slate-900 block leading-tight">CSB Lab</span>
+                                <span className="text-lg font-bold text-slate-900 block leading-tight">Thukral Lab</span>
                                 <span className="text-xs text-slate-500">CSIR-IGIB</span>
                             </div>
                         </Link>

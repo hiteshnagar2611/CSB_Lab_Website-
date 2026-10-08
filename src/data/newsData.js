@@ -22,7 +22,7 @@ export const newsItems = [
     },
     {
         date: "May 6, 2026",
-        title: "Dr. Anand from IISc visited CSB Lab",
+        title: "Dr. Anand from IISc visited Thukral Lab",
         content: "We recently had the pleasure of hosting Dr. Anand from the Indian Institute of Science (IISc). It was a wonderful session discussing ongoing research and fostering future collaborations.",
         link: null,
         image: "/images/News/N1.jpg"
