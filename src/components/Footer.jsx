@@ -23,7 +23,7 @@ const Footer = () => {
                             </div>
                         </Link>
                         <p className="text-sm text-slate-600 leading-relaxed">
-                            Computational Structural Biology Lab at CSIR-Institute of Genomics and Integrative Biology, New Delhi.
+                            Thukral Lab at CSIR-Institute of Genomics and Integrative Biology, New Delhi.
                         </p>
                     </div>
 
@@ -119,7 +119,7 @@ const Footer = () => {
             <div className="border-t border-slate-200">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
                     <p className="text-sm text-slate-500">
-                        &copy; 2016–{new Date().getFullYear()} Computational Structural Biology Lab. All rights reserved.
+                        &copy; 2016–{new Date().getFullYear()} Thukral Lab. All rights reserved.
                     </p>
                     <button
                         onClick={scrollToTop}

@@ -76,7 +76,7 @@ const Home = () => {
                         CSIR-Institute of Genomics and Integrative Biology
                     </p>
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                        Computational Structural Biology Lab
+                        Thukral Lab
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto">
                         Understanding protein lipid interaction in Health and disease using Simulation, AI and Experimental Biology
@@ -104,7 +104,7 @@ const Home = () => {
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-slate-900 mb-6">About Our Lab</h2>
                         <p className="text-lg text-slate-600 max-w-4xl mx-auto leading-relaxed">
-                            The Computational Structural Biology Lab (CSBL) was established in 2016 at CSIR-Institute of Genomics and Integrative Biology, New Delhi, India.
+                            The Thukral Lab was established in 2016 at CSIR-Institute of Genomics and Integrative Biology, New Delhi, India.
                             We explore the vast diversity of biomolecular interactions and their association with human diseases through cutting-edge computational approaches.
                         </p>
                     </div>

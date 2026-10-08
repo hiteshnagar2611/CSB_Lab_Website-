@@ -263,7 +263,7 @@ const Team = () => {
                 <div className="relative z-10 text-center">
                     <h1 className="text-5xl font-bold">Our Team</h1>
                     <p className="mt-4 text-lg text-white/90 max-w-2xl mx-auto">
-                        The people behind the Computational Structural Biology Lab
+                        The people behind the Thukral Lab
                     </p>
                 </div>
             </section>

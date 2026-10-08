@@ -52,7 +52,7 @@ const Research = () => {
                 <div className="pointer-events-none absolute -bottom-32 right-0 h-80 w-80 rounded-full bg-cyan-300/20 blur-3xl"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 relative z-10">
                     <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm font-medium tracking-wide mb-6">
-                        Computational Structural Biology Lab
+                        Thukral Lab
                     </span>
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-5 tracking-tight">
                         Our Research
@@ -73,7 +73,7 @@ const Research = () => {
                         </h2>
                     </div>
                     <p className="text-lg sm:text-xl text-slate-700 leading-relaxed">
-                        The goals of the Computational Structural Biology Lab are to use computational
+                        The goals of the Thukral Lab are to use computational
                         methods to study interesting problems at the interface of biology, physics and
                         chemistry. More generally, the resulting hypothesis or methods are
                         experimentally testable in collaboration with biomedical researchers to gain
