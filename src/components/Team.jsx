@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Users, BookOpen, GraduationCap, ArrowRight, Mail, Award } from 'lucide-react';
 
@@ -91,21 +91,6 @@ const AlumniCard = ({ member }) => (
 );
 
 const Team = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const carouselImages = [
-        url('/images/team/photos/p1.jpg'),
-        url('/images/team/photos/p2.jpg'),
-        url('/images/team/photos/p3.jpg'),
-        url('/images/team/photos/p4.jpg'),
-    ];
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
-        }, 6000);
-        return () => clearInterval(timer);
-    }, [carouselImages.length]);
-
     const principalInvestigator = [
         {
             name: 'Dr. Lipi Thukral',
@@ -258,42 +243,6 @@ const Team = () => {
                     <p className="mt-4 text-lg text-white/90 max-w-2xl mx-auto">
                         The people behind the Thukral Lab
                     </p>
-                </div>
-            </section>
-
-            {/* Image Carousel */}
-            <section className="py-10 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="relative overflow-hidden rounded-2xl shadow-lg">
-                        <div
-                            className="flex transition-transform duration-1000 ease-in-out"
-                            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-                        >
-                            {carouselImages.map((image, index) => (
-                                <div key={index} className="w-full flex-shrink-0">
-                                    <img
-                                        src={image}
-                                        alt={`Lab photo ${index + 1}`}
-                                        className="w-full h-80 sm:h-96 object-cover"
-                                        onError={(e) => {
-                                            e.target.src = url('/images/team/placeholder.jpg');
-                                        }}
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                            {carouselImages.map((_, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => setCurrentSlide(index)}
-                                    className={`w-3 h-3 rounded-full transition-all ${
-                                        index === currentSlide ? 'bg-white scale-110' : 'bg-white/50 hover:bg-white/75'
-                                    }`}
-                                />
-                            ))}
-                        </div>
-                    </div>
                 </div>
             </section>
 
