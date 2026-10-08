@@ -37,12 +37,6 @@ const Home = () => {
         },
     ];
 
-    const stats = [
-        { value: '40+', label: 'Publications' },
-        { value: '15+', label: 'Lab Members' },
-        { value: '10+', label: 'Years Active' },
-    ];
-
     const [slide, setSlide] = useState(0);
     const [paused, setPaused] = useState(false);
     const [perView, setPerView] = useState(3);
@@ -100,20 +94,6 @@ const Home = () => {
                         >
                             View Publications
                         </Link>
-                    </div>
-                </div>
-            </section>
-
-            {/* Section 2: Stats Bar */}
-            <section className="py-10 bg-white border-b border-slate-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-                        {stats.map((stat) => (
-                            <div key={stat.label} className="text-center">
-                                <p className="text-4xl font-bold text-blue-600 mb-1">{stat.value}</p>
-                                <p className="text-sm font-medium text-slate-500 uppercase tracking-wider">{stat.label}</p>
-                            </div>
-                        ))}
                     </div>
                 </div>
             </section>
