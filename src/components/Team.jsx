@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronRight, Users, BookOpen, GraduationCap, ArrowRight, Mail, Award } from 'lucide-react';
+import { ChevronRight, Users, BookOpen, GraduationCap, Award } from 'lucide-react';
 
 const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, '')}`;
 
@@ -297,37 +297,6 @@ const Team = () => {
                                 <MemberCard member={member} />
                             </div>
                         ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Divider */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="border-t border-slate-200"></div>
-            </div>
-
-            {/* Join Us CTA */}
-            <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-3xl font-bold text-white mb-4">Join Our Team</h2>
-                    <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-                        We are always looking for motivated students and researchers interested in computational structural biology, molecular dynamics, and AI-driven drug discovery.
-                    </p>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Link
-                            to="/contact"
-                            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-blue-700 font-semibold hover:bg-blue-50 transition shadow-lg"
-                        >
-                            <Mail className="h-5 w-5" />
-                            Get in Touch
-                        </Link>
-                        <a
-                            href="mailto:lipi_thukral@igib.res.in"
-                            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition"
-                        >
-                            Email PI
-                            <ArrowRight className="h-5 w-5" />
-                        </a>
                     </div>
                 </div>
             </section>
