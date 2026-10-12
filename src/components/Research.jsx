@@ -46,25 +46,8 @@ const Research = () => {
 
     return (
         <div ref={rootRef} className="min-h-screen bg-slate-50">
-            {/* Header */}
-            <header className="relative overflow-hidden bg-gradient-to-br from-blue-700 via-blue-800 to-slate-900 text-white">
-                <div className="pointer-events-none absolute -top-24 -left-20 h-72 w-72 rounded-full bg-blue-400/30 blur-3xl"></div>
-                <div className="pointer-events-none absolute -bottom-32 right-0 h-80 w-80 rounded-full bg-cyan-300/20 blur-3xl"></div>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 relative z-10">
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm font-medium tracking-wide mb-6">
-                        Thukral Lab
-                    </span>
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-5 tracking-tight">
-                        Our Research
-                    </h1>
-                    <p className="text-lg sm:text-xl text-blue-100 max-w-2xl">
-                        highlights of labs work
-                    </p>
-                </div>
-            </header>
-
             {/* Theme navigation */}
-            <nav className="sticky top-16 z-30 py-5 mt-10 bg-slate-50/90 backdrop-blur border-b border-slate-200/80">
+            <nav className="sticky top-16 z-30 py-5 mt-24 bg-slate-50/90 backdrop-blur border-b border-slate-200/80">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center gap-2 sm:gap-3">
                     {themes.map((theme) => (
                         <a
