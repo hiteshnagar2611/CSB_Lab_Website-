@@ -34,16 +34,6 @@ const Publications = () => {
         setExpandedId((prev) => (prev === id ? null : id));
     };
 
-    const formatAuthors = (authors, maxDisplay = 3) => {
-        const authorList = authors.split(', ').map((a) => a.trim());
-        if (authorList.length <= maxDisplay) {
-            return authors;
-        }
-        const displayed = authorList.slice(0, maxDisplay).join(', ');
-        const remaining = authorList.length - maxDisplay;
-        return `${displayed} ... (+${remaining} authors)`;
-    };
-
     const hasActiveFilters = searchQuery || selectedYear;
 
     return (
@@ -185,9 +175,9 @@ const Publications = () => {
                                                     {pub.title}
                                                 </h3>
 
-                                                {/* Authors (truncated) */}
+                                                {/* Authors */}
                                                 <p className="text-sm text-slate-500 mb-2">
-                                                    {formatAuthors(pub.authors, 4)}
+                                                    {pub.authors}
                                                 </p>
 
                                                 {/* Journal */}
