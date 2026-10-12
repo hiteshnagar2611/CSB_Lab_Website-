@@ -44,6 +44,20 @@ const Research = () => {
     const rootRef = useRef(null);
     useReveal(rootRef);
 
+    const handleThemeClick = (event, id) => {
+        event.preventDefault();
+        const target = document.getElementById(id);
+        if (!target) return;
+
+        const navbar = document.querySelector('nav.fixed');
+        const stickyBar = event.currentTarget.closest('nav');
+        const offset =
+            (navbar?.offsetHeight || 0) + (stickyBar?.offsetHeight || 0) + 12;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+
+        window.scrollTo({ top, behavior: 'smooth' });
+    };
+
     return (
         <div ref={rootRef} className="min-h-screen bg-slate-50 pt-24">
             {/* Theme navigation */}
@@ -53,6 +67,7 @@ const Research = () => {
                         <a
                             key={theme.id}
                             href={`#${theme.id}`}
+                            onClick={(event) => handleThemeClick(event, theme.id)}
                             className="group inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-slate-200 text-sm font-medium text-slate-600 hover:text-blue-700 hover:border-blue-300 hover:shadow-sm transition-all"
                         >
                             <span className="text-blue-600/70 font-semibold">{theme.number}</span>
