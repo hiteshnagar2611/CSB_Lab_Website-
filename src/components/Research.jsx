@@ -63,25 +63,6 @@ const Research = () => {
                 </div>
             </header>
 
-            {/* Lab Goals */}
-            <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
-                <div className="reveal bg-white rounded-2xl shadow-xl shadow-slate-200/70 border border-slate-100 p-7 sm:p-10">
-                    <div className="flex items-center gap-3 mb-4">
-                        <span className="h-8 w-1.5 rounded-full bg-blue-600"></span>
-                        <h2 className="text-sm font-semibold uppercase tracking-widest text-blue-700">
-                            Lab Goals
-                        </h2>
-                    </div>
-                    <p className="text-lg sm:text-xl text-slate-700 leading-relaxed">
-                        The goals of the Thukral Lab are to use computational
-                        methods to study interesting problems at the interface of biology, physics and
-                        chemistry. More generally, the resulting hypothesis or methods are
-                        experimentally testable in collaboration with biomedical researchers to gain
-                        biological insights. The broader research themes are mentioned below:
-                    </p>
-                </div>
-            </section>
-
             {/* Theme navigation */}
             <nav className="sticky top-16 z-30 py-5 mt-10 bg-slate-50/90 backdrop-blur border-b border-slate-200/80">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center gap-2 sm:gap-3">
