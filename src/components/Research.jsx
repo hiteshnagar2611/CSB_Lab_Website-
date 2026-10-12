@@ -45,9 +45,9 @@ const Research = () => {
     useReveal(rootRef);
 
     return (
-        <div ref={rootRef} className="min-h-screen bg-slate-50">
+        <div ref={rootRef} className="min-h-screen bg-slate-50 pt-24">
             {/* Theme navigation */}
-            <nav className="sticky top-16 z-30 py-5 mt-24 bg-slate-50/90 backdrop-blur border-b border-slate-200/80">
+            <nav className="sticky top-16 z-30 py-5 bg-slate-50/90 backdrop-blur border-b border-slate-200/80">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center gap-2 sm:gap-3">
                     {themes.map((theme) => (
                         <a
