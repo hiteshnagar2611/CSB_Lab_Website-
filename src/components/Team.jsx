@@ -304,10 +304,7 @@ const Team = () => {
             {/* Alumni */}
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-4 text-slate-900">Alumni</h2>
-                    <p className="text-center text-slate-500 mb-12 max-w-2xl mx-auto">
-                        Our former members who have gone on to make their mark in academia and industry worldwide.
-                    </p>
+                    <h2 className="text-3xl font-bold text-center mb-12 text-slate-900">Alumni</h2>
 
                     {/* Post Doctoral Fellows */}
                     <div className="mb-12">
