@@ -27,6 +27,39 @@ const Footer = () => {
                         <p className="text-sm text-slate-600 leading-relaxed">
                             Thukral Lab at CSIR-Institute of Genomics and Integrative Biology, New Delhi.
                         </p>
+
+                        {/* Funding Partners */}
+                        <div className="mt-6">
+                            <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">
+                                Funding Partners
+                            </h4>
+                            <div className="flex flex-wrap gap-2.5">
+                                {[
+                                    { src: 'images/funding/dbt.png', alt: 'Department of Biotechnology (DBT)' },
+                                    { src: 'images/funding/dst.png', alt: 'Department of Science and Technology (DST)' },
+                                    { src: 'images/funding/India_Alliance_DBT_Wellcome.jpg', alt: 'India Alliance, DBT & Wellcome Trust' },
+                                    { src: 'images/funding/acsir.png', alt: 'AcSIR' },
+                                    { src: 'images/funding/IGIB.gif', alt: 'CSIR-IGIB' },
+                                    { src: 'images/funding/New-4PI.png', alt: 'CSIR-4PI' },
+                                ].map((logo) => (
+                                    <div
+                                        key={logo.alt}
+                                        title={logo.alt}
+                                        className="h-14 w-24 rounded-lg border border-slate-200 bg-white flex items-center justify-center p-2"
+                                    >
+                                        <img
+                                            src={`${import.meta.env.BASE_URL}${logo.src}`}
+                                            alt={logo.alt}
+                                            className="max-h-full max-w-full object-contain"
+                                            loading="lazy"
+                                            onError={(e) => {
+                                                e.target.style.display = 'none';
+                                            }}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
 
                     {/* Quick Links */}
