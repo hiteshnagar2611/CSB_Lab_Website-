@@ -234,13 +234,23 @@ const Team = () => {
     return (
         <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
             {/* Hero Section */}
-            <section className="text-white relative hero-bg flex items-center justify-center">
+            <section className="text-white relative">
+                <img
+                    src={url('/images/backgrounds/1773391074992.png')}
+                    alt="Thukral Lab group"
+                    className="block w-full h-auto"
+                    onError={(e) => {
+                        e.target.style.display = 'none';
+                    }}
+                />
                 <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}></div>
-                <div className="relative z-10 text-center">
-                    <h1 className="text-5xl font-bold">Our Team</h1>
-                    <p className="mt-4 text-lg text-white/90 max-w-2xl mx-auto">
-                        The people behind the Thukral Lab
-                    </p>
+                <div className="absolute inset-0 z-10 flex items-center justify-center px-4">
+                    <div className="text-center">
+                        <h1 className="text-5xl font-bold">Our Team</h1>
+                        <p className="mt-4 text-lg text-white/90 max-w-2xl mx-auto">
+                            The people behind the Thukral Lab
+                        </p>
+                    </div>
                 </div>
             </section>
 

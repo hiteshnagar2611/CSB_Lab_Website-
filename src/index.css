@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero-bg {
-  background-image: url('/images/backgrounds/1773391074992.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 462px;
-}
-
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-10px) rotate(5deg); }
