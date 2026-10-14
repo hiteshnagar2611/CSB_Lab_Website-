@@ -9,7 +9,7 @@ const Home = () => {
     const researchAreas = [
         {
             icon: Microscope,
-            title: 'Autophagy & Membrane Biology',
+            title: 'Autophagosome formation and its dysregulation in diseases',
             description: 'Molecular mechanisms of autophagy pathways and protein–membrane interactions',
             link: '/research',
             image: '/images/research/Autophagy-MembraneBiology.jpg',
