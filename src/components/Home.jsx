@@ -23,7 +23,7 @@ const Home = () => {
         },
         {
             icon: Atom,
-            title: 'Molecular Dynamics',
+            title: 'protein lipid interaction',
             description: 'μs-timescale simulations of protein dynamics and ligand binding',
             link: '/research',
             image: '/images/research/MolecularDynamicsSimulations.jpg',
