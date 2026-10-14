@@ -65,10 +65,13 @@ const Home = () => {
         <div className="min-h-screen">
             {/* Section 1: Hero */}
             <section className="relative h-screen flex items-center justify-center">
-                <img
-                    src={url('/images/GIF/phagophore_movie_trimmed.gif')}
-                    alt="Autophagy animation"
+                <video
                     className="absolute inset-0 w-full h-full object-cover"
+                    src={url('/images/GIF/phagophore_movie_1080p_trimmed.mov')}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
                 />
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
