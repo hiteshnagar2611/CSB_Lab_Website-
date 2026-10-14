@@ -5,9 +5,9 @@
 .hero-bg {
   background-image: url('/images/backgrounds/1773391074992.png');
   background-size: cover;
-  background-position: center 35%;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 620px;
+  height: 462px;
 }
 
 @keyframes float {
