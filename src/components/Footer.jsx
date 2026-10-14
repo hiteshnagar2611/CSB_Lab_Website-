@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <footer className="bg-white border-t border-slate-200">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid md:grid-cols-4 gap-10">
+                <div className="grid md:grid-cols-5 gap-10">
                     {/* Branding */}
                     <div>
                         <Link to="/" className="inline-flex items-center gap-2 mb-4">
@@ -27,39 +27,6 @@ const Footer = () => {
                         <p className="text-sm text-slate-600 leading-relaxed">
                             Thukral Lab at CSIR-Institute of Genomics and Integrative Biology, New Delhi.
                         </p>
-
-                        {/* Funding Partners */}
-                        <div className="mt-6">
-                            <h4 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">
-                                Funding Partners
-                            </h4>
-                            <div className="flex flex-wrap gap-2.5">
-                                {[
-                                    { src: 'images/funding/dbt.png', alt: 'Department of Biotechnology (DBT)' },
-                                    { src: 'images/funding/dst.png', alt: 'Department of Science and Technology (DST)' },
-                                    { src: 'images/funding/India_Alliance_DBT_Wellcome.jpg', alt: 'India Alliance, DBT & Wellcome Trust' },
-                                    { src: 'images/funding/acsir.png', alt: 'AcSIR' },
-                                    { src: 'images/funding/IGIB.gif', alt: 'CSIR-IGIB' },
-                                    { src: 'images/funding/New-4PI.png', alt: 'CSIR-4PI' },
-                                ].map((logo) => (
-                                    <div
-                                        key={logo.alt}
-                                        title={logo.alt}
-                                        className="h-14 w-24 rounded-lg border border-slate-200 bg-white flex items-center justify-center p-2"
-                                    >
-                                        <img
-                                            src={`${import.meta.env.BASE_URL}${logo.src}`}
-                                            alt={logo.alt}
-                                            className="max-h-full max-w-full object-contain"
-                                            loading="lazy"
-                                            onError={(e) => {
-                                                e.target.style.display = 'none';
-                                            }}
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
                     </div>
 
                     {/* Quick Links */}
@@ -159,6 +126,37 @@ const Footer = () => {
                             {' & '}
                             <a href="https://www.linkedin.com/in/hiteshnagar" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Hitesh</a>
                         </p>
+                    </div>
+
+                    {/* Funding Partners */}
+                    <div>
+                        <h3 className="font-semibold text-slate-900 mb-4">Funding Partners</h3>
+                        <div className="flex flex-wrap gap-2.5">
+                            {[
+                                { src: 'images/funding/dbt.png', alt: 'Department of Biotechnology (DBT)' },
+                                { src: 'images/funding/dst.png', alt: 'Department of Science and Technology (DST)' },
+                                { src: 'images/funding/India_Alliance_DBT_Wellcome.jpg', alt: 'India Alliance, DBT & Wellcome Trust' },
+                                { src: 'images/funding/acsir.png', alt: 'AcSIR' },
+                                { src: 'images/funding/IGIB.gif', alt: 'CSIR-IGIB' },
+                                { src: 'images/funding/New-4PI.png', alt: 'CSIR-4PI' },
+                            ].map((logo) => (
+                                <div
+                                    key={logo.alt}
+                                    title={logo.alt}
+                                    className="h-14 w-24 rounded-lg border border-slate-200 bg-white flex items-center justify-center p-2"
+                                >
+                                    <img
+                                        src={`${import.meta.env.BASE_URL}${logo.src}`}
+                                        alt={logo.alt}
+                                        className="max-h-full max-w-full object-contain"
+                                        loading="lazy"
+                                        onError={(e) => {
+                                            e.target.style.display = 'none';
+                                        }}
+                                    />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
