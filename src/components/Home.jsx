@@ -30,7 +30,7 @@ const Home = () => {
         },
         {
             icon: Pill,
-            title: 'Drug Discovery',
+            title: 'Vesicular assemblies phagophore, LNP',
             description: 'Computational approaches for identifying drug targets and protein-ligand interactions',
             link: '/research',
             image: '/images/research/ComputationalDrugDiscovery.jpg',
