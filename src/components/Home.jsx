@@ -16,7 +16,7 @@ const Home = () => {
         },
         {
             icon: Brain,
-            title: 'AI-Driven Protein Structure',
+            title: 'Structure genomics in cancer',
             description: 'Leveraging AlphaFold2 to expand structural coverage of disease-related proteins',
             link: '/research',
             image: '/images/research/AI-PoweredAutophagy.jpg',
