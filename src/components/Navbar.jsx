@@ -11,7 +11,11 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(!isHomePage || window.scrollY > 50);
+            if (isHomePage) {
+                setScrolled(window.scrollY > window.innerHeight - 64);
+            } else {
+                setScrolled(true);
+            }
         };
 
         handleScroll(); // Set initial value
@@ -33,7 +37,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+        <nav className="fixed w-full z-50 transition-all duration-300 bg-transparent">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <Link to="/" className="flex items-center space-x-2">
