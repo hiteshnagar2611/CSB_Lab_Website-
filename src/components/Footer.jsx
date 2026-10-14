@@ -120,12 +120,6 @@ const Footer = () => {
                                 <Linkedin className="w-5 h-5" />
                             </a>
                         </div>
-                        <p className="text-xs text-slate-500">
-                            Developed by{' '}
-                            <a href="https://www.linkedin.com/in/ekanshjadon" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Ekansh</a>
-                            {' & '}
-                            <a href="https://www.linkedin.com/in/hiteshnagar" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Hitesh</a>
-                        </p>
                     </div>
 
                     {/* Funding Partners */}
@@ -164,9 +158,17 @@ const Footer = () => {
             {/* Bottom Bar */}
             <div className="border-t border-slate-200">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-                    <p className="text-sm text-slate-500">
-                        &copy; 2016–{new Date().getFullYear()} Thukral Lab. All rights reserved.
-                    </p>
+                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                        <p className="text-sm text-slate-500">
+                            &copy; 2016–{new Date().getFullYear()} Thukral Lab. All rights reserved.
+                        </p>
+                        <p className="text-xs text-slate-500">
+                            Developed by{' '}
+                            <a href="https://www.linkedin.com/in/ekanshjadon" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Ekansh</a>
+                            {' & '}
+                            <a href="https://www.linkedin.com/in/hiteshnagar" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Hitesh</a>
+                        </p>
+                    </div>
                     <button
                         onClick={scrollToTop}
                         className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-blue-600 transition-colors"
