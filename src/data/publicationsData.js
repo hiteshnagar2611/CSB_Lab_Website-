@@ -32,6 +32,38 @@ export const publications = [
         correspondingAuthor: true
     },
     {
+        id: 46,
+        authors: "Altaf M, Cheng MTK, González-Vázquez LD, Castin J, Kemp SA, Hisner R, Martin DP, Thukral L, Meng B, Gupta RK",
+        title: "SARS-CoV-2 intra-host recombination promotes epistatic spike interactions and temperature-dependent adaptation",
+        journal: "Cell Reports",
+        journalAbbrev: "Cell Rep",
+        year: 2026,
+        volume: "45",
+        issue: "6",
+        pages: "117460",
+        month: "Jun",
+        doi: "10.1016/j.celrep.2026.117460",
+        image: "/images/publications/placeholder.jpg",
+        topics: ["SARS-CoV-2", "Recombination", "Spike Protein", "Viral Evolution"],
+        correspondingAuthor: false
+    },
+    {
+        id: 47,
+        authors: "Berkamp S, Jungbluth L, Katranidis A, Mostafavi S, Korculanin O, Lu P, Ickert L, Dierig MM, Sharma L, Thukral L, Huesgen PF, Kononenko NL, Fitter J, Dunin-Borkowski RE, Sachse C",
+        title: "Structural organization of p62 filaments and the cellular ultrastructure of calcium-rich p62-enwrapped lipid droplet cargo",
+        journal: "Nature Communications",
+        journalAbbrev: "Nat Commun",
+        year: 2025,
+        volume: "16",
+        issue: "1",
+        pages: "10810",
+        month: "Nov 28",
+        doi: "10.1038/s41467-025-66785-7",
+        image: "/images/publications/placeholder.jpg",
+        topics: ["Autophagy", "p62", "Lipid Droplets", "Cryo-ET"],
+        correspondingAuthor: false
+    },
+    {
         id: 3,
         authors: "Cheng MTK, Altaf M, Castin J, Reuschl AK, Sievers BL, Kamelian K, Mesner D, Morse RB, Abdullahi A, Meng B, Csiba K, Cambridge NIHR Bioresource, Kemp SA, Martin DP, Jolly C, Ruis C, Thukral L*, Gupta RK*",
         title: "Signatures of omicron-like adaptation in early SARS-CoV-2 variants and chronic infection",
@@ -368,6 +400,22 @@ export const publications = [
         correspondingAuthor: false
     },
     {
+        id: 48,
+        authors: "Kumar S, Thakur J, Yadav K, Mitra M, Pal S, Ray A, Gupta S, Medatwal N, Gupta R, Mishra D, Rani P, Padhi S, Sharma P, Kapil A, Srivastava A, Priyakumar UD, Dasgupta U, Thukral L*, Bajaj A*",
+        title: "Cholic acid-derived amphiphile which combats gram-positive bacteria-mediated infections via disintegration of lipid clusters",
+        journal: "ACS Biomaterials Science & Engineering",
+        journalAbbrev: "ACS Biomater Sci Eng",
+        year: 2019,
+        volume: "5",
+        issue: "9",
+        pages: "4764-4775",
+        month: "Sep 9",
+        doi: "10.1021/acsbiomaterials.9b00706",
+        image: "/images/publications/placeholder.jpg",
+        topics: ["Antimicrobial", "Amphiphile", "Lipid Clusters", "Drug Discovery"],
+        correspondingAuthor: true
+    },
+    {
         id: 24,
         authors: "Grover R, Burse SA, Shankrit S, Aggarwal A, Kirty K, Narta K, Srivastav R, Ray AK, Malik G, Vats A, Motiani RK, Thukral L, Roy SS, Bhattacharya S, Sharma R, Natarajan K, Mukerji M, Pandey R, Gokhale RS, Natarajan VT",
         title: "Myg1 exonuclease couples the nuclear and mitochondrial translational programs through RNA processing",
@@ -672,6 +720,22 @@ export const publications = [
         correspondingAuthor: false
     },
     {
+        id: 49,
+        authors: "Thukral L, Brown AJ",
+        title: "Lipid–Protein Interactions in Membranes: implications for health and disease",
+        journal: "Clinical Lipidology",
+        journalAbbrev: "Clin Lipidol",
+        year: 2013,
+        volume: "8",
+        issue: "1",
+        pages: "43-45",
+        month: "Feb",
+        doi: "10.2217/clp.12.85",
+        image: "/images/publications/placeholder.jpg",
+        topics: ["Lipid-Protein Interactions", "Membrane Biology", "Review"],
+        correspondingAuthor: false
+    },
+    {
         id: 43,
         authors: "Thukral L, Daidone I, Smith JC",
         title: "Structured pathway across the transition state for peptide folding revealed by molecular dynamics simulations",
@@ -734,4 +798,4 @@ export const allTopics = [
     "Mycobacteria"
 ];
 
-export const allYears = [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2011, 2009, 2007];
+export const allYears = [2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2013, 2011, 2009, 2007];
