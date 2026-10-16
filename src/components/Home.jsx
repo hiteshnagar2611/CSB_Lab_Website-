@@ -12,28 +12,25 @@ const Home = () => {
             title: 'Autophagosome formation and its dysregulation in diseases',
             description: 'Molecular mechanisms of autophagy pathways and protein–membrane interactions',
             link: '/research',
-            image: '/images/research/Autophagy-MembraneBiology.jpg',
+            image: '/images/research/Autophagosome_formation.png',
         },
         {
             icon: Brain,
             title: 'Structure genomics in cancer',
             description: 'Leveraging AlphaFold2 to expand structural coverage of disease-related proteins',
             link: '/research',
-            image: '/images/research/AI-PoweredAutophagy.jpg',
         },
         {
             icon: Atom,
             title: 'protein lipid interaction',
             description: 'μs-timescale simulations of protein dynamics and ligand binding',
             link: '/research',
-            image: '/images/research/MolecularDynamicsSimulations.jpg',
         },
         {
             icon: Pill,
             title: 'Vesicular assemblies phagophore, LNP',
             description: 'Computational approaches for identifying drug targets and protein-ligand interactions',
             link: '/research',
-            image: '/images/research/ComputationalDrugDiscovery.jpg',
         },
     ];
 
