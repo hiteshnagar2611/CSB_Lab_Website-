@@ -10,6 +10,7 @@ import News from './components/News';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import MemberBio from './components/MemberBio';
+import KnowPI from './components/KnowPI';
 // Individual member pages
 import Hitesh from './components/members/Hitesh';
 import Deepanshi from './components/members/Deepanshi';
@@ -65,6 +66,7 @@ const App = () => {
                 {/* Fallback to dynamic MemberBio for other members */}
                 <Route path="/team/:name" element={<MemberBio />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/know-pi" element={<KnowPI />} />
             </Routes>
             {!isMemberBioPage && <Footer />}
         </div>

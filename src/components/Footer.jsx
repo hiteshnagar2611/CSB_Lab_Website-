@@ -38,6 +38,7 @@ const Footer = () => {
                                 { name: 'Research', path: '/research' },
                                 { name: 'Publications', path: '/publications' },
                                 { name: 'Team', path: '/team' },
+                                { name: 'Know PI', path: '/know-pi' },
                                 { name: 'Contact', path: '/contact' },
                                 { name: 'CSIR-IGIB', path: 'https://www.igib.res.in' },
                             ].map((link) =>
