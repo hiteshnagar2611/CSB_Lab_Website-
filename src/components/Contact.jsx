@@ -16,7 +16,7 @@ const Contact = () => {
                     <div className="text-center mb-16">
                         <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                            Interested in collaboration, research opportunities, or have questions? We'd love to hear from you.
+                            Interested in collaboration or research opportunities, or do you have questions? We'd love to hear from you.
                         </p>
                     </div>
 

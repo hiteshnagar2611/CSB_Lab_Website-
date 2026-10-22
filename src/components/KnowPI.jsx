@@ -152,7 +152,7 @@ const KnowPI = () => {
                                         reviewing for leading international journals.
                                     </p>
                                     <p>
-                                        Dr. Thukral&apos;s research focuses on understanding how biomolecular
+                                        Dr. Thukral&apos;s research focuses on understanding biomolecular
                                         interactions at the structural level, particularly how protein–membrane
                                         interactions in autophagy drive autophagosome formation. Her work
                                         integrates large-scale molecular simulations with experimental

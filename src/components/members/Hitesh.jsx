@@ -20,7 +20,7 @@ const Hitesh = () => {
                     >
                         Dr. Lipi Thukral
                     </a>
-                    . Currently, My research explores how protein language models can uncover the hidden grammar of life.
+                    . Currently, my research explores how protein language models can uncover the hidden grammar of life.
                 </p>
                 <p className="mb-4">
                     I completed my B.E. in Information Technology from{' '}

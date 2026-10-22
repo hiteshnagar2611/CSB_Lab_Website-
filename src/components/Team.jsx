@@ -164,10 +164,10 @@ const Team = () => {
     ];
 
     const alumniPostdocs = [
-        { name: 'Kriti Kashyap', role: 'Post Doctoral Fellow', current: 'Presently @ Delhi University' },
-        { name: 'Nidhi Katyal', role: 'Post Doctoral Fellow', img: url('/images/team/nidhi-katyal.jpg'), current: 'Presently @ Shiv Nadar University' },
-        { name: 'Nidhi Batra', role: 'Post Doctoral Fellow', img: url('/images/team/nidhi-batra.jpg'), current: 'Presently @ Jaypee University' },
-        { name: 'Neha', role: 'Post Doctoral Fellow', img: url('/images/team/neha.jpg'), current: 'Presently Scientist at CSIR-Fourth Paradigm Institute' },
+        { name: 'Kriti Kashyap', role: 'Postdoctoral Fellow', current: 'Presently @ Delhi University' },
+        { name: 'Nidhi Katyal', role: 'Postdoctoral Fellow', img: url('/images/team/nidhi-katyal.jpg'), current: 'Presently @ Shiv Nadar University' },
+        { name: 'Nidhi Batra', role: 'Postdoctoral Fellow', img: url('/images/team/nidhi-batra.jpg'), current: 'Presently @ Jaypee University' },
+        { name: 'Neha', role: 'Postdoctoral Fellow', img: url('/images/team/neha.jpg'), current: 'Presently a Scientist at CSIR-Fourth Paradigm Institute' },
     ];
 
     const alumniPhd = [
@@ -208,13 +208,13 @@ const Team = () => {
         { name: 'Vignesh Nandgopal', role: 'Summer Intern (2024)' },
         { name: 'Musharraf Parvez', role: 'Summer Intern (2024)' },
         { name: 'Archana Karki', role: 'M.Tech Thesis (2024)' },
-        { name: 'Saman Fatihi', role: 'Master Thesis (2018)' },
-        { name: 'Afreen Khan', role: 'Master Thesis (2018)' },
-        { name: 'Sanchita Jain', role: 'Master Thesis (2018)' },
+        { name: 'Saman Fatihi', role: "Master's Thesis (2018)" },
+        { name: 'Afreen Khan', role: "Master's Thesis (2018)" },
+        { name: 'Sanchita Jain', role: "Master's Thesis (2018)" },
         { name: 'Kiran Mahto', role: 'Summer Intern (2018)' },
         { name: 'Aditi Sadhu', role: 'Summer Intern (2018)' },
         { name: 'Rohit Satyam', role: 'Summer Intern (2018)' },
-        { name: 'Waali Aafaq', role: 'Master Thesis (2018)' },
+        { name: 'Waali Aafaq', role: "Master's Thesis (2018)" },
         { name: 'Arvind Iyer', role: 'M.Tech Thesis (2017-18)' },
         { name: 'Kriti Karn', role: 'Summer Intern (2017)' },
         { name: 'Joel John', role: 'Winter Intern (2017)' },
@@ -320,7 +320,7 @@ const Team = () => {
                     <div className="mb-12">
                         <h3 className="text-xl font-semibold text-slate-800 mb-5 flex items-center gap-2">
                             <Award className="h-5 w-5 text-blue-600" />
-                            Post Doctoral Fellows
+                            Postdoctoral Fellows
                         </h3>
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                             {alumniPostdocs.map((member, index) => (

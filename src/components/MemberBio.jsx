@@ -63,7 +63,7 @@ const MemberBio = () => {
             image: url('/images/team/LipiT.jpg'),
             bio: `Dr. Lipi Thukral obtained her Ph.D. from the University of Heidelberg, Germany (2007–2011), where she worked with Prof. Jeremy C. Smith on molecular dynamics simulations of protein folding. She then joined the group of Prof. Syma Khalid at the University of Southampton, UK, as a postdoctoral researcher. In 2013, she was awarded the prestigious DST-INSPIRE Faculty Fellowship and joined CSIR–Institute of Genomics and Integrative Biology (IGIB), India, as a computational biologist. She established her independent research group in 2016 and currently leads a computational structural biology group as a Senior Principal Scientist.
 In 2019, Dr. Thukral received the CSIR Young Scientist Award in Biological Sciences in recognition of her contributions to the field of autophagy. She is also a recipient of the India Alliance Intermediate Fellowship supported by DBT and the Wellcome Trust. She is a member of several national expert committees in computational biology and serves on the editorial boards of eLife and the Biophysical Journal, in addition to reviewing for leading international journals.
-Dr. Thukral's research focuses on understanding how biomolecular interactions at the structural level, particularly how protein–membrane interactions in autophagy drive autophagosome formation. Her work integrates large-scale molecular simulations with experimental collaborations to interpret complex biological data and guide hypothesis-driven experiments. Her lab has published extensively in the areas of protein–lipid dynamics, autophagy, and structural genomics of infectious diseases. 
+Dr. Thukral's research focuses on understanding biomolecular interactions at the structural level, particularly how protein–membrane interactions in autophagy drive autophagosome formation. Her work integrates large-scale molecular simulations with experimental collaborations to interpret complex biological data and guide hypothesis-driven experiments. Her lab has published extensively in the areas of protein–lipid dynamics, autophagy, and structural genomics of infectious diseases. 
 
 `
         },
@@ -124,7 +124,7 @@ She is particularly interested in applying cutting-edge AI techniques to solve c
             image: url('/images/team/tanushree.JPG'),
             bio: `I am a CSIR Research Associate at CSIR-IGIB working with [Dr. Lipi Thukral](https://www.igib.res.in/?q=LipiThukral) at the intersection of computational biology, molecular simulations, and machine learning. My research focuses on the NOTCH signaling pathway, where I study how protein conformations and mutations influence cell-cell communication and therapeutic targeting. I use molecular dynamics simulations, structural modeling, and advanced AI-driven approaches to investigate receptor-ligand interactions, integrating genomic data to elucidate how mutations influence protein structure and function.
 
-I completed my Ph.D. at Department of Chemistry, University of Calcutta, India, under the supervision of [Prof. Chaitali Mukhopadhyay](https://scholar.google.com/citations?user=JRK4UNwAAAAJ&hl=en), where I worked on protein-ligand interactions and membrane-associated systems.
+I completed my Ph.D. at the Department of Chemistry, University of Calcutta, India, under the supervision of [Prof. Chaitali Mukhopadhyay](https://scholar.google.com/citations?user=JRK4UNwAAAAJ&hl=en), where I worked on protein-ligand interactions and membrane-associated systems.
 
 I am broadly interested in applying computational approaches to uncover molecular mechanisms and support drug discovery.`
         },
@@ -210,7 +210,7 @@ My research interests lie in cancer biology, molecular biology, and the cellular
         'hitesh-nagar': {
             name: 'Hitesh Nagar',
             image: url('/images/team/hitesh.jpg'),
-            bio: `I am a Project Associate at CSIR-IGIB in New Delhi, where I work with [Dr. Lipi Thukral](https://www.igib.res.in/?q=LipiThukral). Currently, My research explores how protein language models can uncover the hidden grammar of life.
+            bio: `I am a Project Associate at CSIR-IGIB in New Delhi, where I work with [Dr. Lipi Thukral](https://www.igib.res.in/?q=LipiThukral). Currently, my research explores how protein language models can uncover the hidden grammar of life.
 
 I completed my B.E. in Information Technology from [MBM University, Jodhpur](https://www.mbm.ac.in/), India in 2025. I have been fortunate to work with amazing mentors across different institutions. In summer 2024, I worked with [Dr. Jyothi Vedurada](https://jyothivedurada.github.io/) at IIT Hyderabad on API misuse prediction. In summer 2023, I was part of the VL2G team at IIT Jodhpur, led by [Prof. Anand Mishra](https://anandmishra22.github.io/), where I developed a scene-text annotation tool for Indian languages.
 

@@ -23,7 +23,7 @@ const DrTanushreeDas = () => {
                     at the intersection of computational biology, molecular simulations, and machine learning. My research focuses on the NOTCH signaling pathway, where I study how protein conformations and mutations influence cell-cell communication and therapeutic targeting. I use molecular dynamics simulations, structural modeling, and advanced AI-driven approaches to investigate receptor-ligand interactions, integrating genomic data to elucidate how mutations influence protein structure and function.
                 </p>
                 <p className="mb-4">
-                    I completed my Ph.D. at Department of Chemistry, University of Calcutta, India, under the supervision of{' '}
+                    I completed my Ph.D. at the Department of Chemistry, University of Calcutta, India, under the supervision of{' '}
                     <a href="https://scholar.google.com/citations?user=JRK4UNwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
                         Prof. Chaitali Mukhopadhyay
                     </a>

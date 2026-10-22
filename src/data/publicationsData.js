@@ -162,7 +162,7 @@ export const publications = [
     {
         id: 9,
         authors: "Malhotra N, Khatri S, Kumar A, Arun A, Daripa P, Fatihi S, Venkadesan S, Jain N, Thukral L*",
-        title: "AI-based Alphafold2 significantly expands the structural space of the autophagy pathway",
+        title: "AI-based AlphaFold2 significantly expands the structural space of the autophagy pathway",
         journal: "Autophagy",
         journalAbbrev: "Autophagy",
         year: 2023,
@@ -258,7 +258,7 @@ export const publications = [
     {
         id: 15,
         authors: "Paul S, Fatihi S, Sharma S, Kutum R, Fields R, Pant HC, Thukral L, Binukumar BK",
-        title: "Cyclin dependent kinase 5 regulates cPLA2 activity and neuroinflammation in Parkinson's disease",
+        title: "Cyclin-dependent kinase 5 regulates cPLA2 activity and neuroinflammation in Parkinson's disease",
         journal: "eNeuro",
         journalAbbrev: "eNeuro",
         year: 2022,
@@ -402,7 +402,7 @@ export const publications = [
     {
         id: 48,
         authors: "Kumar S, Thakur J, Yadav K, Mitra M, Pal S, Ray A, Gupta S, Medatwal N, Gupta R, Mishra D, Rani P, Padhi S, Sharma P, Kapil A, Srivastava A, Priyakumar UD, Dasgupta U, Thukral L*, Bajaj A*",
-        title: "Cholic acid-derived amphiphile which combats gram-positive bacteria-mediated infections via disintegration of lipid clusters",
+        title: "Cholic acid-derived amphiphile which combats Gram-positive bacteria-mediated infections via disintegration of lipid clusters",
         journal: "ACS Biomaterials Science & Engineering",
         journalAbbrev: "ACS Biomater Sci Eng",
         year: 2019,

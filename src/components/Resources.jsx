@@ -6,7 +6,7 @@ const Resources = () => {
         {
             title: 'Autophagy 3D Database',
             description:
-                'Autophagy 3D Database is a comprehensive resource that provides structural information on autophagy-related proteins. It integrates data from various sources to offer insights into the 3D structures of proteins involved in autophagy, facilitating research in this critical cellular process.',
+                'The Autophagy 3D Database is a comprehensive resource that provides structural information on autophagy-related proteins. It integrates data from various sources to offer insights into the 3D structures of proteins involved in autophagy, facilitating research in this critical cellular process.',
             link: 'https://autophagy3d.igib.res.in/',
             label: 'Read More'
         },
@@ -20,7 +20,7 @@ const Resources = () => {
         {
             title: 'RAPSAP - Resource of AF2 Predicted Structures of Autophagy Pathway',
             description:
-                'Welcome to RAPSAP, a curated resource that leverages AI-based AlphaFold2(AF2) and molecular dynamics (MD) simulations to enhance the current structural and functional understanding of autophagic proteins. AF2 enhances the structural space of autophagic proteins by ~47%. RAPSAP enlists the confidence structural predictions of 416 proteins constituting autophagic interactome along with their extensive analysis. The resource also provides comprehensive assessment of 38 core autophagic proteins predicted by AF2. The structures with less template information and high-confidence scores were subjected to microsecond MD simulations to generate ensemble of functionally relevant conformations. The current resource provides an open access to these structural conformers. In addition to the monomeric models, AF2 predicted multimeric complex of ATG7-ATG10 tetramer and its simulated ensemble, is made available. To summarize, RAPSAP serves as an excellent starting point to explore autophagic proteins and complexes in understanding functioning of autophagy pathway.',
+                'Welcome to RAPSAP, a curated resource that leverages AI-based AlphaFold2 (AF2) and molecular dynamics (MD) simulations to enhance the current structural and functional understanding of autophagic proteins. AF2 enhances the structural space of autophagic proteins by ~47%. RAPSAP enlists the confident structural predictions of 416 proteins constituting the autophagic interactome along with their extensive analysis. The resource also provides a comprehensive assessment of 38 core autophagic proteins predicted by AF2. The structures with less template information and high-confidence scores were subjected to microsecond MD simulations to generate an ensemble of functionally relevant conformations. The current resource provides open access to these structural conformers. In addition to the monomeric models, the AF2-predicted multimeric complex of the ATG7-ATG10 tetramer and its simulated ensemble is made available. To summarize, RAPSAP serves as an excellent starting point to explore autophagic proteins and complexes in understanding the functioning of the autophagy pathway.',
             link: 'https://rapsap.igib.res.in/',
             label: 'Read More'
         }

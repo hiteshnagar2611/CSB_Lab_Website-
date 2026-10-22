@@ -16,19 +16,19 @@ const Home = () => {
         },
         {
             icon: Brain,
-            title: 'Structure genomics in cancer',
+            title: 'Structural genomics in cancer',
             description: 'Expanding structural coverage of cancer-related proteins with AlphaFold2 to uncover disease mechanisms',
             link: '/research',
         },
         {
             icon: Atom,
-            title: 'protein lipid interaction',
+            title: 'Protein–lipid interactions',
             description: 'How proteins bind and remodel membranes through atomistic and coarse-grained simulations',
             link: '/research',
         },
         {
             icon: Pill,
-            title: 'Vesicular assemblies phagophore, LNP',
+            title: 'Vesicular assemblies: phagophore, LNP',
             description: 'Modeling phagophore closure and lipid nanoparticle assembly for autophagy and drug delivery',
             link: '/research',
         },
@@ -79,7 +79,7 @@ const Home = () => {
                         Thukral Lab
                     </h1>
                     <p className="text-lg sm:text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto">
-                        Understanding protein lipid interaction in Health and disease using Simulation, AI and Experimental Biology
+                        Understanding protein–lipid interactions in health and disease using simulation, AI, and experimental biology
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
